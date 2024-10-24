@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Link Tags Reference</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">HTML Tags</a>
+                    <div class="dropdown-content">
+                        <a href="structural-tags.html">Structural Tags</a>
+                        <a href="text-formatting-tags.html">Text Formatting</a>
+                        <a href="link-tags.html">Links</a>
+                        <a href="image-tags.html">Images</a>
+                        <a href="form-tags.html">Forms</a>
+                    </div>
+                </li>
+                <li><a href="../tutorials/html-basics.html">Tutorials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Link Tags and Attributes</h1>
+
+        <section class="tag-section" id="basic-links">
+            <h2>Basic Link Tag</h2>
+            <div class="tag-description">
+                <p>The basic anchor tag (&lt;a&gt;) creates a hyperlink to web pages, files, email addresses, or any other URL.</p>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="link-targets">
+            <h2>Link Targets</h2>
+            <div class="tag-description">
+                <p>The target attribute specifies where to open the linked document.</p>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;!-- Opens in a new tab/window --&gt;
+&lt;a href="https://www.example.com" target="_blank"&gt;Open in new tab&lt;/a&gt;
+
+&lt;!-- Opens in the same frame (default) --&gt;
+&lt;a href="https://www.example.com" target="_self"&gt;Open in same tab&lt;/a&gt;
+
+&lt;!-- Opens in the parent frame --&gt;
+&lt;a href="https://www.example.com" target="_parent"&gt;Open in parent frame&lt;/a&gt;
+
+&lt;!-- Opens in the full body of the window --&gt;
+&lt;a href="https://www.example.com" target="_top"&gt;Open in full window&lt;/a&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="email-links">
+            <h2>Email Links</h2>
+            <div class="tag-description">
+                <p>Create links that open the user's email client.</p>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;a href="mailto:example@email.com"&gt;Send email&lt;/a&gt;
+
+&lt;!-- With subject and body --&gt;
+&lt;a href="mailto:example@email.com?subject=Hello&body=How%20are%20you"&gt;
+    Send email with pre -filled subject and body
+&lt;/a&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="download-links">
+            <h2>Download Links</h2>
+            <div class="tag-description">
+                <p>Create links that prompt the user to download a file.</p>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;a href="path/to/file.zip" download&gt;Download file.zip&lt;/a&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML Reference</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>
+</html>

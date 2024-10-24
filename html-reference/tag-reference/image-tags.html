@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image Tags Reference</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">HTML Tags</a>
+                    <div class="dropdown-content">
+                        <a href="structural-tags.html">Structural Tags</a>
+                        <a href="text-formatting-tags.html">Text Formatting</a>
+                        <a href="link-tags.html">Links</a>
+                        <a href="image-tags.html">Images</a>
+                        <a href="form-tags.html">Forms</a>
+                    </div>
+                </li>
+                <li><a href="../tutorials/html-basics.html">Tutorials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Image Tags and Attributes</h1>
+
+        <section class="tag-section" id="basic-image">
+            <h2>Basic Image Tag</h2>
+            <div class="tag-description">
+                <p>The basic image tag (&lt;img&gt;) embeds an image into the webpage. The src and alt attributes are required.</p>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;img src="path/to/image.jpg" alt="Description of image"&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="image-dimensions">
+            <h2>Image Dimensions</h2>
+            <div class="tag-description">
+                <p>Specify image width and height using pixels or percentage.</p>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;!-- Using pixels --&gt;
+&lt;img src="image.jpg" alt="Image" width="300" height="200"&gt;
+
+&lt;!-- Using percentage --&gt;
+&lt;img src="image.jpg" alt="Image" width="100%" height="auto"&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="responsive-images">
+            <h2>Responsive Images</h2>
+            <div class="tag-description">
+                <p>Use srcset and sizes attributes for responsive images.</p>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;img src="small.jpg"
+     srcset="small.jpg 300w,
+             medium.jpg 600w,
+             large.jpg 900w"
+     sizes="(max-width: 500px) 300px,
+            (max-width: 900px) 600px,
+            900px"
+     alt="Responsive image"&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="picture-element">
+            <h2>Picture Element</h2>
+            <div class="tag-description">
+                <p>The picture element provides more flexibility for responsive images.</p>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;picture&gt;
+    &lt;source media="(min-width: 800px)" srcset ="large.jpg"&gt;
+    &lt;source media="(min-width: 400px)" srcset="medium.jpg"&gt;
+    &lt;img src="small.jpg" alt="Responsive image"&gt;
+&lt;/picture&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML Reference</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>
+</html>

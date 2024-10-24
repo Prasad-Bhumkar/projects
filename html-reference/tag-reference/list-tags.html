@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to HTML list tags: ordered lists, unordered lists, and description lists">
+    <title>HTML List Tags Reference | HTML Guide</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../prism.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.svg" alt="HTML Reference Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="list-tags.html" class="active">List Tags</a></li>
+                <li><a href="text-formatting-tags.html">Text Formatting</a></li>
+                <li><a href="table-tags.html">Table Tags</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="list-tags-guide">
+            <header class="article-header">
+                <h1>HTML List Tags</h1>
+                <div class="article-meta">
+                    <span class="last-updated">Last updated: <time datetime="2023-11-14">Nov 14, 2023</time></span>
+                    <span class="reading-time">Reading time: 10 min</span>
+                </div>
+            </header>
+
+            <nav class="page-nav">
+                <h2>On This Page</h2>
+                <ul>
+                    <li><a href="#unordered-lists">Unordered Lists</a></li>
+                    <li><a href="#ordered-lists">Ordered Lists</a></li>
+                    <li><a href="#description-lists">Description Lists</a></li>
+                    <li><a href="#nested-lists">Nested Lists</a></li>
+                    <li><a href="#custom-styling">Custom Styling</a></li>
+                </ul>
+            </nav>
+
+            <section id="quick-reference" class="content-section">
+                <h2>Quick Reference</h2>
+                <table class="reference-table">
+                    <thead>
+                        <tr>
+                            <th>List Type</th>
+                            <th>Tags</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Unordered List</td>
+                            <td><code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code></td>
+                            <td>Creates a bulleted list</td>
+                        </tr>
+                        <tr>
+                            <td>Ordered List</td>
+                            <td><code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
+                            <td>Creates a numbered list</td>
+                        </tr>
+                        <tr>
+                            <td>Description List</td>
+                            <td><code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code></td>
+                            <td>Creates a description/definition list</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="unordered-lists" class="content-section">
+                <h2>Unordered Lists</h2>
+                <p>Unordered lists are used when the order of items doesn't matter. Each item starts with a bullet point.</p>
+                
+                <div class="example-box">
+                    <h3>Basic Unordered List</h3>
+                    <pre><code class="language- HTML">
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                    </code></pre>
+                </div>
+            </section>
+
+            <section id="ordered-lists" class="content-section">
+                <h2>Ordered Lists</h2>
+                <p>Ordered lists are used when the order of items matters. Each item starts with a number.</p>
+                
+                <div class="example-box">
+                    <h3>Basic Ordered List</h3>
+                    <pre><code class="language-HTML">
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                </div>
+            </section>
+
+            <section id="description-lists" class="content-section">
+                <h2>Description Lists</h2>
+                <p>Description lists are used to describe terms or definitions.</p>
+                
+                <div class="example-box">
+                    <h3>Basic Description List</h3>
+                    <pre><code class="language-HTML">
+&lt;dl&gt;
+    &lt;dt&gt;Term 1&lt;/dt&gt;
+    &lt;dd&gt;Definition 1&lt;/dd&gt;
+    &lt;dt&gt;Term 2&lt;/dt&gt;
+    &lt;dd&gt;Definition 2&lt;/dd&gt;
+&lt;/dl&gt;
+                    </code></pre>
+                </div>
+            </section>
+
+            <section id="nested-lists" class="content-section">
+                <h2>Nested Lists</h2>
+                <p>Nested lists are used to create sublists within a list.</p>
+                
+                <div class="example-box">
+                    <h3>Basic Nested List</h3>
+                    <pre><code class="language-HTML">
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2
+        &lt;ul&gt;
+            &lt;li&gt;Subitem 1&lt;/li&gt;
+            &lt;li&gt;Subitem 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                    </code></pre>
+                </div>
+            </section>
+
+            <section id="custom-styling" class="content-section">
+                <h2>Custom Styling</h2>
+                <p>You can customize the appearance of lists using CSS.</p>
+                
+                <div class="example-box">
+                    <h3>Custom List Styles</h3>
+                    <pre><code class="language-CSS">
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+                    </code></pre>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2023 HTML Reference</p>
+        <ul class="social-links">
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../prism.js"></script>
+</body>
+</html>

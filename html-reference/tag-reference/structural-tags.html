@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structural Tags Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <style>
+        .tag-diagram {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        .tag-notes {
+            background: #fffde7;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #ffd54f;
+            border-radius: 0 5px 5px 0;
+        }
+        .tag-example {
+            background: #e3f2fd;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .tag-attributes {
+            background: #f3e5f5;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .tag-best-practices {
+            background: #e8f5e9;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .interactive-demo {
+            border: 2px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <!-- [Previous nav code remains the same] -->
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Structural and Semantic Tags Guide</h1>
+
+        <section class="tag-section" id="document-structure">
+            <h2>Document Structure</h2>
+            <div class="tag-description">
+                <h3>Basic HTML5 Document Structure</h3>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta name="description" content="Page description"&gt;
+        &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+        &lt;meta name="author" content="Author Name"&gt;
+        &lt;title&gt;Document Title&lt;/title&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;script src="script.js" defer&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Content goes here --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                </div>
+                <div class="tag-notes">
+                    <h4>Important Notes:</h4>
+                    <ul>
+                        <li>The DOCTYPE declaration is mandatory and must be the first line</li>
+                        <li>The lang attribute helps with accessibility and SEO</li>
+                        <li>Meta tags provide important information for browsers and search engines</li>
+                        <li>The viewport meta tag is crucial for responsive design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="semantic-layout">
+            <h2>Semantic Layout Elements</h2>
+            <div class="tag-description">
+                <h3>HTML5 Semantic Elements for Page Structure</h3>
+                <div class="tag-diagram">
+                    <pre><code class="language-html">
+&lt;header&gt;
+    &lt;nav&gt;Navigation menu&lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;header&gt;Article header&lt;/header&gt;
+        &lt;section&gt;Article section&lt;/section&gt;
+        &lt;footer&gt;Article footer&lt;/footer&gt;
+    &lt;/article&gt;
+
+    &lt;aside&gt;Sidebar content&lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;Page footer&lt;/footer&gt;
+                    </code></pre>
+                </div>
+                <div class="tag-notes">
+                    <h4>Benefits of Semantic Elements:</h4>
+                    <ul>
+                        <li>Improved page structure and accessibility</li>
+                        <li>Better search engine optimization (SEO)</li>
+                        <li>Easier maintenance and updates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="grouping-elements">
+            <h2>Grouping Elements</h2>
+            <div class="tag-description">
+                <h3>Elements for Grouping Content</h3>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;div&gt;Generic container element&lt;/div&gt;
+&lt;span&gt;Inline grouping element&lt;/span&gt;
+                    </code></pre>
+                </div>
+                <div class="tag-attributes">
+                    <h4>Common Attributes:</h4>
+                    <ul>
+                        <li>class: for applying CSS styles</li>
+                        <li>id: for unique identification</li>
+                        <li>style: for inline CSS styles</li>
+                    </ul>
+                </div>
+                <div class="tag-best-practices">
+                    <h4>Best Practices:</h4>
+                    <ul>
+                        <li>Use div and span elements sparingly</li>
+                        <li>Prefer semantic elements for better structure</li>
+                        <li>Avoid using inline styles; use CSS instead</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="lists">
+            <h2>Lists</h2>
+            <div class="tag-description">
+                <h3>Ordered and Unordered Lists</h3>
+                <div class="example-code">
+                    <pre><code class="language-html">
+&lt;ul&gt;
+    &lt;li&gt;List item 1&lt;/li&gt;
+    &lt;li&gt;List item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;List item 1&lt;/li&gt;
+    &lt;li&gt;List item 2&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                </div>
+                <div class="tag-attributes">
+                    <h4>Common Attributes:</h4>
+                    <ul>
+                        <li>type: for specifying list type (e.g., disc, circle, square)</li>
+                        <li>start: for specifying the starting number in an ordered list</li>
+                    </ul>
+                </div>
+                <div class="tag-best-practices">
+                    <h4>Best Practices:</h4>
+                    <ul>
+                        <li>Use lists for presenting collections of data</li>
+                        <li>Avoid using lists for layout purposes</li>
+                        <li>Use CSS to customize list styles</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section" id="interactive-demos">
+            <h2>Interactive Demos</h2>
+            <div class="interactive-demo">
+                <h3>Document Structure Demo</h3>
+                <div>
+                    <textarea id="document-structure" rows="10" cols="50">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document Title</title>
+        </head>
+        <body>
+            <!-- Content goes here -->
+        </body>
+        </html>
+                    </textarea>
+                    <button onclick="previewDocumentStructure()">Preview</button>
+                </div>
+                <div id="document-structure-preview" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px;"></div>
+            </div>
+        
+            <div class="interactive-demo">
+                <h3>Semantic Layout Demo</h3>
+                <div>
+                    <button onclick="showSemanticLayout()">Show Layout</button>
+                </div>
+                <div id="semantic-layout-preview" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px;"></div>
+            </div>
+        
+            <div class="interactive-demo">
+                <h3>Grouping Elements Demo</h3>
+                <div>
+                    <input type="text" id="grouping-input" placeholder="Type something here...">
+                    <button onclick="showGroupingElements()">Show Grouping</button>
+                </div>
+                <div id="grouping-preview" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px;"></div>
+            </div>
+        
+            <div class="interactive-demo">
+                <h3>Lists Demo</h3>
+                <div>
+                    <textarea id="lists-input" rows="5" cols="50">
+        Item 1
+        Item 2
+        Item 3
+                    </textarea>
+                    <button onclick="showLists()">Show Lists</button>
+                </div>
+                <div id="lists-preview" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px;"></div>
+            </div>
+        </section>
+        
+        <script>
+            function previewDocumentStructure() {
+                const htmlContent = document.getElementById('document-structure').value;
+                document.getElementById('document-structure-preview').innerHTML = htmlContent;
+            }
+        
+            function showSemanticLayout() {
+                const layout = `
+                    <header>
+                        <nav>Navigation menu</nav>
+                    </header>
+                    <main>
+                        <article>
+                            <header>Article header</header>
+                            <section>Article section</section>
+                            <footer>Article footer</footer>
+                        </article>
+                        <aside>Sidebar content</aside>
+                    </main>
+                    <footer>Page footer</footer>
+                `;
+                document.getElementById('semantic-layout-preview').innerHTML = layout;
+            }
+        
+            function showGroupingElements() {
+                const input = document.getElementById('grouping-input').value;
+                const groupedContent = `<div>Generic container: <span>${input}</span></div>`;
+                document.getElementById('grouping-preview').innerHTML = groupedContent;
+            }
+        
+            function showLists() {
+                const items = document.getElementById('lists-input').value.split('\n');
+                const ul = `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+                document.getElementById('lists-preview').innerHTML = ul;
+            }
+        </script>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML Reference</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>
+</html>

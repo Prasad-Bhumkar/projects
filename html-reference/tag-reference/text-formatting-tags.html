@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Text Formatting Tags Reference</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <style>
+        .demo-section {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+
+        .example-box {
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .usage-notes {
+            background: #e3f2fd;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #2196f3;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .tag-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .side-by-side {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+        }
+
+        .tag-attributes {
+            background: #fff3e0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <!-- Navigation structure remains the same -->
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Text Formatting Tags</h1>
+
+        <section id="headings">
+            <h2>Heading Elements</h2>
+            <div class="demo-section">
+                <div class="example-box">
+                    <h1>Heading Level 1</h1>
+                    <h2>Heading Level 2</h2>
+                    <h3>Heading Level 3</h3>
+                    <h4>Heading Level 4</h4>
+                    <h5>Heading Level 5</h5>
+                    <h6>Heading Level 6</h6>
+                </div>
+                <div class="usage-notes">
+                    <h4>Usage Guidelines:</h4>
+                    <ul>
+                        <li>Use only one h1 per page</li>
+                        <li>Maintain proper heading hierarchy</li>
+                        <li>Don't skip heading levels</li>
+                        <li>Use headings for structure, not styling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="paragraph-text">
+            <h2>Paragraph and Text Elements</h2>
+            <div class="demo-section">
+                <div class="example-box">
+                    <p>Regular paragraph text</p>
+                    <p>Text with <strong>strong importance</strong></p>
+                    <p>Text with <em>emphasized</em> content</p>
+                    <p>This text contains a <mark>highlighted</mark> word</p>
+                    <p>This is <small>smaller text</small> within a paragraph</p>
+                    <p>This text has been <del>deleted</del> and <ins>inserted</ins></p>
+                    <p>Example of <sub>subscript</sub> and <sup>superscript</sup> text</p>
+                </div>
+                <div class="tag-attributes"> <!-- Add attributes for each tag -->
+                    <h4>Common Attributes:</h4>
+                    <ul>
+                        <li>style: for inline CSS styles</li>
+                        <li>class: for applying CSS classes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="lists">
+            <h2>Lists</h2>
+            <div class="demo-section">
+                <div class="example-box">
+                    <ul>
+                        <li>Unordered list item 1</li>
+                        <li>Unordered list item 2</li>
+                    </ul>
+                    <ol>
+                        <li>Ordered list item 1</li>
+                        <li>Ordered list item 2</li>
+                    </ol>
+                </div>
+                <div class="usage-notes">
+                    <h4>Usage Guidelines:</h4>
+                    <ul>
+                        <li>Use lists for presenting collections of data</li>
+                        <li>Avoid using lists for layout purposes</li>
+                        <li>Use CSS to customize list styles</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="blockquote">
+            <h2>Blockquote</h2>
+            <div class="demo-section">
+                <div class="example-box">
+                    <blockquote>
+                        <p>This is a blockquote with a citation.</p>
+                        <cite>Author Name</cite>
+                    </blockquote>
+                </div>
+                <div class="usage-notes">
+                    <h4>Usage Guidelines:</h4>
+                    <ul>
+                        <li>Use blockquotes for quoting external sources</li>
+                        <li>Provide a citation for the quoted content</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="code-snippets">
+            <h2>Code Snippets</h2>
+            <div class="demo-section">
+                <div class="example-box">
+                    <code>This is an inline code snippet</code>
+                    <pre><code>This is a block of code</code></pre>
+                </div>
+                <div class="usage-notes">
+                    <h4>Usage Guidelines:</h4>
+                    <ul>
+                        <li>Use code elements for presenting code snippets</li>
+                        <li>Use pre elements for block-level code</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML Reference</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>
+</html>

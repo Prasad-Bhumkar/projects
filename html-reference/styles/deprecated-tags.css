@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark text color */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+/* Container for the main content */
+.container {
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2.5rem; /* Large font size for the main title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #dc3545; /* Red color for the title */
+}
+
+/* Section Styles */
+.tag-category {
+    margin: 30px 0; /* Space between sections */
+    padding: 20px; /* Padding inside sections */
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Deprecated Tag Styles */
+.deprecated-tag {
+    border: 1px solid #dc3545; /* Red border for deprecated tags */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px 0; /* Margin between deprecated tags */
+    background-color: #fff8f8; /* Light red background */
+}
+
+/* Alternative Styles */
+.alternative {
+    border: 1px solid #28a745; /* Green border for alternatives */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 10px 0; /* Margin between alternatives */
+    background-color: #f8fff8; /* Light green background */
+}
+
+/* Warning Styles */
+.warning {
+    background-color: #fff3cd; /* Light yellow background */
+    border-left: 4px solid #ffc107; /* Yellow left border */
+    padding: 15px; /* Padding inside the warning box */
+    margin: 15px 0; /* Margin around the warning box */
+}
+
+/* Code Example Styles */
+.code-example {
+    background-color: #282c34; /* Dark background for code examples */
+    padding: 15px; /* Padding inside the code example box */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0; /* Margin around code examples */
+    position: relative; /* Position for the copy button */
+    color: #4CAF50; /* Green text color for code */
+}
+
+/* Copy Button Styles */
+.copy-button {
+    position: absolute; /* Position button inside code example */
+    top: 5px; /* Position from the top */
+    right: 5px; /* Position from the right */
+    padding: 5px 10px; /* Padding for the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Status Indicator Styles */
+.status-indicator {
+    display: inline-block; /* Inline block for status indicators */
+    padding: 3px 8px; /* Padding for indicators */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 0.8em; /* Smaller font size */
+    margin-left: 10px; /* Space to the left */
+}
+
+/* Deprecated Status */
+.deprecated {
+    background-color: #dc3545; /* Red background for deprecated status */
+    color: white; /* White text */
+}
+
+/* Recommended Status */
+.recommended {
+    background-color: #28a745; /* Green background for recommended status */
+    color: white; /* White text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .tag-category {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .deprecated-tag,
+    .alternative {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .code-example {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}

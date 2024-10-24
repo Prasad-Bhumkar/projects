@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to HTML deprecated tags and their modern alternatives">
+    <title>HTML Deprecated Tags Reference | HTML Guide</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/deprecated-tags.css">
+    <link rel="stylesheet" href="../styles/prism.css">
+
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.svg" alt="HTML Reference Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="deprecated-tags.html" class="active">Deprecated Tags</a></li>
+                <li><a href="../tutorials/html-basics.html">Tutorials</a></li>
+                <li><a href="../examples/index.html">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>HTML Deprecated Tags Reference</h1>
+        
+        <section class="introduction">
+            <p>This guide covers HTML tags that have been deprecated and should no longer be used in modern web development. For each deprecated tag, we provide modern alternatives and best practices.</p>
+            
+            <div class="warning">
+                <h3>⚠️ Important Note</h3>
+                <p>Deprecated tags should not be used in new projects. While browsers might still support these tags, they may stop working in future updates.</p>
+             </div>
+        </section>
+
+        <!-- Presentational Tags -->
+        <section class="tag-category">
+            <h2>Presentational Tags</h2>
+            
+            <div class="deprecated-tag">
+                <h3>&lt;font&gt;</h3>
+                <p>Defines a font style.</p>
+                <div class="alternative">
+                    <h3>Alternative: CSS Styles</h3>
+                    <p>Use CSS styles to define font styles instead of the <code>&lt;font&gt;</code> tag.</p>
+                    <div class="code-example">
+                        <button class="copy-button">Copy</button>
+                        <pre><code class="language-css">
+font-family: Arial, sans-serif;
+font-size: 18px;
+color: #333;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deprecated-tag">
+                <h3>&lt;center&gt;</h3>
+                <p>Centers content horizontally.</p>
+                <div class="alternative">
+                    <h3>Alternative: CSS Styles</h3>
+                    <p>Use CSS styles to center content instead of the <code>&lt;center&gt;</code> tag.</p>
+                    <div class="code-example">
+                        <button class="copy-button">Copy</button>
+                        <pre><code class="language-css">
+text-align: center;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multimedia Tags -->
+        <section class="tag-category">
+            <h2>Multimedia Tags</h2>
+            
+            <div class="deprecated-tag">
+                <h3>&lt;embed&gt;</h3>
+                <p>Embeds a multimedia file.</p>
+                <div class="alternative">
+                    <h3>Alternative: &lt;video&gt; or &lt;audio&gt;</h3>
+                    <p>Use the <code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code> tags to embed multimedia files instead of the <code>&lt;embed&gt;</code> tag.</p>
+                    <div class="code-example">
+                        <button class="copy-button">Copy</button>
+                        <pre><code class="language-html">
+&lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deprecated-tag">
+                <h3>&lt;bgsound&gt;</h3>
+                <p>Plays a background sound.</p>
+                <div class="alternative">
+                    <h3>Alternative: &lt;audio&gt;</h3>
+                    <p>Use the <code>&lt;audio&gt;</code> tag to play background sounds instead of the <code>&lt;bgsound&gt;</code> tag.</p>
+                    <div class="code-example">
+                        <button class="copy-button">Copy</button>
+                        <pre><code class="language-html">
+&lt;audio src="sound.mp3" autoplay loop&gt;&lt;/audio&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Tags -->
+        <section class="tag-category">
+            <h2>Other Tags</h2>
+            
+            <div class="deprecated-tag">
+                <h3>&lt;u&gt;</h3>
+                <p>Underlines text.</p>
+                <div class="alternative">
+                    <h3>Alternative: CSS Styles</h3>
+                    <p>Use CSS styles to underline text instead of the <code>&lt;u&gt;</code> tag.</p>
+                    <div class="code-example">
+                        <button class="copy-button">Copy</button>
+                        <pre><code class="language-css">
+text-decoration: underline;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deprecated-tag">
+                <h3>&lt;s&gt;</h3>
+                <p>Strikes through text.</p>
+                <div class="alternative">
+                    <h3>Alternative: CSS Styles</h3>
+                    <p>Use CSS styles to strike through text instead of the <code>&lt;s&gt;</code> tag.</p>
+                    <div class="code-example">
+                        <button class="copy-button">Copy</button>
+                        <pre><code class="language-css">
+text-decoration: line-through;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="conclusion">
+            <h2>Conclusion</h2>
+            
+            <p>Avoid using deprecated tags in your HTML code. Instead, use modern alternatives and best practices to ensure your website is compatible with future browser updates.</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2023 HTML Reference. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../script.js" defer></script>
+    <script src="../prism.js" defer></script>
+</body>
+</html>

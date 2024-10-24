@@ -1,0 +1,89 @@
+/* prism.css */
+
+/* Base styles for code blocks */
+pre {
+    background: #f5f5f5; /* Light background for code blocks */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding around the code */
+    overflow: auto; /* Enable scrolling for long code */
+}
+
+/* Code styles */
+code {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    font-size: 14px; /* Font size */
+}
+
+/* Prism.js specific styles */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray; /* Color for comments */
+}
+
+.token.punctuation {
+    color: #999; /* Color for punctuation */
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol {
+    color: #905; /* Color for properties and tags */
+}
+
+.token.selector {
+    color: #690; /* Color for selectors */
+}
+
+.token.attr-name {
+    color: #7a11b0; /* Color for attribute names */
+}
+
+.token.string {
+    color: #a67f59; /* Color for strings */
+}
+
+.token.number {
+    color: #e90; /* Color for numbers */
+}
+
+.token.boolean {
+    color: #e90; /* Color for booleans */
+}
+
+.token.variable {
+    color: #e90; /* Color for variables */
+}
+
+.token.function {
+    color: #00a1e4; /* Color for functions */
+}
+
+.token.class-name {
+    color: #b52e31; /* Color for class names */
+}
+
+.token.keyword {
+    color: #d73a49; /* Color for keywords */
+}
+
+.token.operator {
+    color: #9a6e3a; /* Color for operators */
+}
+
+.token.regex {
+    color: #e90; /* Color for regex */
+}
+
+.token.important {
+    font-weight: bold; /* Bold for important tokens */
+}
+
+.token.atrule {
+    color: #1e90ff; /* Color for at-rules */
+}
+
+/* Add more styles as needed for other token types */

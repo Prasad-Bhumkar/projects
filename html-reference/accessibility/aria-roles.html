@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Roles Reference</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file if needed -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        header, footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            margin: 20px 0;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ARIA Roles Reference</h1>
+        <p>An overview of ARIA roles to enhance web accessibility.</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>What are ARIA Roles?</h2>
+            <p>ARIA roles define the type of user interface element that an HTML element represents, enhancing accessibility for users with disabilities. They help assistive technologies understand the purpose of elements in a web application.</p>
+        </section>
+
+        <section>
+            <h2>Common ARIA Roles</h2>
+            <ul>
+                <li><strong>button</strong> - Represents a clickable button.</li>
+                <li><strong>navigation</strong> - Represents a navigation section.</li>
+                <li><strong>main</strong> - Represents the main content of the document.</li>
+                <li><strong>complementary</strong> - Represents content that complements the main content.</li>
+                <li><strong>dialog</strong> - Represents a dialog box or modal window.</li>
+                <li><strong>alert</strong> - Represents an alert message.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Usage Examples</h2>
+            <p>Here are some examples of how to use ARIA roles in HTML:</p>
+            <pre>
+                <code>
+                    &lt;button role="button"&gt;Click Me&lt;/button&gt;
+                    &lt;nav role="navigation"&gt;
+                        &lt;a href="#home"&gt;Home&lt;/a&gt;
+                        &lt;a href="#about"&gt;About&lt;/a&gt;
+                    &lt;/nav&gt;
+                    &lt;div role="dialog" aria-labelledby="dialogTitle"&gt;
+                        &lt;h2 id="dialogTitle"&gt;Dialog Title&lt;/h2&gt;
+                        &lt;p&gt;This is a dialog box.&lt;/p&gt;
+                        &lt;button role="button"&gt;Close&lt;/button&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Interactive Example</h2>
+            <p>Try clicking the button below to see how ARIA roles can enhance accessibility:</p>
+            <button role="button" onclick="alert('Button clicked!')">Click Me</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
