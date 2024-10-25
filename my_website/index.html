@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+<style>
+    main {
+        display: flex;
+        padding-right: 15px;
+    }
+    .content{
+        padding-left: 15px;
+    }
+</style>
+
 <body>
     <header>
         <h1>Welcome to My Website</h1>
@@ -19,28 +32,39 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="">
         <div class="sidebar">
             <h2>Content Structure</h2>
             <ul>
-                <li><a href="#what-is-html">What is HTML?</a></li>
-                <li><a href="#where-it-fits">Where does it fit in?</a></li>
-                <li><a href="#html-tags">HTML tags and attributes</a></li>
-                <li><a href="#text-formatting">Text formatting tags</a></li>
-                <li><a href="#linking-pages">Linking pages</a></li>
-                <li><a href="#lists-and-tables">Working with lists and tables</a></li>
-                <li><a href="#embedding-images">Embedding Images</a></li>
-                <li><a href="#images-as-links">Images as links</a></li>
-                <li><a href="#interaction-forms">Interaction using forms</a></li>
-                <li><a href="#form-elements">Different types of form elements</a></li>
-                <li><a href="#frame-and-framesets">Working with Frames</a></li>
-                <li><a href="#nested-frames">Nested frames</a></li>
+                <li><a href="chapters/what_is_html.html">What is HTML?</a></li>
+                <li><a href="chapters/where_does_it_fit_in.html">Where Does it Fit In?</a></li>
+                <li><a href="chapters/html_tags_and_attributes.html">HTML Tags and Attributes</a></li>
+                <li><a href="chapters/text_formatting_tags.html">Text Formatting Tags</a></li>
+                <li><a href="chapters/linking_pages.html">Linking Pages</a></li>
+                <li><a href="chapters/working_with_lists.html">Working with Lists</a></li>
+                <li><a href="chapters/working_with_tables.html">Working with Tables</a></li>
+                <li><a href="chapters/embedding_images.html">Embedding Images</a></li>
+                <li><a href="chapters/images_as_links_and_image_maps.html">Images as Links and Image Maps</a></li>
+                <li><a href="chapters/interaction_using_forms.html">Interaction Using Forms</a></li>
+                <li><a href="chapters/different_types_of_form_elements.html">All Form Elements</a></li>
+                <li><a href="chapters/working_with_frames_and_frame_sets.html">Working with Frames and Frame Sets</a>
+                </li>
+                <li><a href="chapters/nested_frames.html">Nested Frames</a></li>
+            </ul>
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/">W3Schools - Learn Web Development</a></li>
+                <li><a href="https://developer.mozilla.org/">MDN Web Docs - Comprehensive Documentation</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks - Tips and Tricks for CSS</a></li>
+                <li><a href="https://stackoverflow.com/">Stack Overflow - Community Q&A</a></li>
             </ul>
         </div>
         <div class="content">
             <h2>Home Page Content</h2>
-            <p>Welcome to our website! Discover a world of information and resources tailored just for you. Whether you're looking for the latest news, insightful articles, or community events, we have something for everyone.</p>
-            
+            <p>Welcome to our website! Discover a world of information and resources tailored just for you. Whether
+                you're looking for the latest news, insightful articles, or community events, we have something for
+                everyone.</p>
+
             <h3>Featured Articles</h3>
             <ul class="featured-articles">
                 <li><a href="article1.html">Understanding HTML: A Beginner's Guide</a></li>
@@ -54,8 +78,10 @@
             <p>Join us for our upcoming events to connect with others and enhance your skills!</p>
             <ul class="events-list">
                 <li><strong>Web Development Workshop:</strong> March 15, 2023 - A hands-on workshop for beginners.</li>
-                <li><strong>Networking Meetup:</strong> April 10, 2023 - Meet like-minded individuals and expand your network.</li>
-                <li><strong>Annual Tech Conference:</strong> May 20, 2023 - Join industry leaders and innovators for discussions and presentations.</li>
+                <li><strong>Networking Meetup:</strong> April 10, 2023 - Meet like-minded individuals and expand your
+                    network.</li>
+                <li><strong>Annual Tech Conference:</strong> May 20, 2023 - Join industry leaders and innovators for
+                    discussions and presentations.</li>
             </ul>
 
             <h3>Join Our Newsletter</h3>
@@ -85,4 +111,5 @@
     </footer>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
