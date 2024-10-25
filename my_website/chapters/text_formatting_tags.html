@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting Tags in HTML</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header & Footer */
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header nav a, footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover, footer a:hover {
+            background-color: #34495e;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Headings */
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        /* Interactive Elements */
+        .interactive-demo {
+            background-color: #f8f9fa;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .live-preview {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Tables */
+        .tag-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .tag-table th, .tag-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .tag-table th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .tag-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Cards */
+        .info-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Notes and Tips */
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .tip {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        /* Practice Section */
+        .practice-section {
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .quiz-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .quiz-option {
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+        }
+
+        .quiz-option:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Buttons */
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../exercises.html">Exercises</a>
+            <a href="../quiz.html">Quiz</a>
+            <a href="../resources.html">Resources</a>
+        </nav>
+    </header>
+
+<div class="container">
+    <h1>Text Formatting Tags in HTML</h1>
+
+    <div class="info-card">
+        <h2>Chapter Overview</h2>
+        <ul>
+            <li>Learn essential text formatting tags</li>
+            <li>Understand semantic vs. presentational formatting</li>
+            <li>Practice with interactive examples</li>
+            <li>Complete hands-on exercises</li>
+        </ul>
+    </div>
+
+    <section>
+        <h2>Basic Text Formatting</h2>
+        <div class="interactive-demo">
+            <h3>Try it yourself:</h3>
+            <textarea id="html-input" rows="5" style="width: 100%; margin-bottom: 10px;">
+<p>This is <b>bold</b> and this is <i>italic</i>.</p>
+<p>This is <strong>strong</strong> and this is <em>emphasized</em>.</p>
+<p>This is <u>underlined</u> and this is <s>striked</s>.</p>
+</textarea>
+            <button class="btn" onclick="updatePreview()">Run Code</button>
+            <div class="live-preview" id="preview-box">
+                <!-- Preview will appear here -->
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Common Text Formatting Tags</h2>
+        <div class="tag-table-container">
+            <table class="tag-table">
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>b</code></td>
+                    <td>Represents bold text</td>
+                </tr>
+                <tr>
+                    <td><code>i</code></td>
+                    <td>Represents italic text</td>
+                </tr>
+                <tr>
+                    <td><code>strong</code></td>
+                    <td>Represents strong importance</td>
+                </tr>
+                <tr>
+                    <td><code>em</code></td>
+                    <td>Represents emphasized text</td>
+                </tr>
+                <tr>
+                    <td><code>u</code></td>
+                    <td>Represents underlined text</td>
+                </tr>
+                <tr>
+                    <td><code>s</code></td>
+                    <td>Represents striked text</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>Semantic vs. Presentational Tags</h2>
+        <div class="info-card">
+            <div class="comparison-table">
+                <table class="tag-table">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Semantic</th>
+                        <th>Presentational</th>
+                    </tr>
+                    <tr>
+                        <td><code>b</code></td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>i</code></td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>strong</code></td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><code>em</code></td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="practice-section">
+        <h2>Practice Exercises</h2>
+        <div class="quiz-container">
+            <h3>Quick Quiz</h3>
+            <div class="quiz-option" onclick="checkAnswer(1)">
+                1. Which tag is used for bold text with semantic meaning?
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(2)">
+                2. What's the difference between <em> and <i>?
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(3)">
+                3. Which tag is used for underlined text?
+            </div>
+            <div class="quiz-option" onclick="checkAnswer(4)">
+                4. What's the difference between <strong> and <b>?
+            </div>
+        </div>
+    </section>
+</div>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p><a href="../privacy.html">Privacy Policy</a> | <a href="../terms.html">Terms of Service</a></p>
+        <a href="../index.html">Back to Home</a>
+    </footer>
+
+    <script>
+        function updatePreview() {
+            const htmlInput = document.getElementById('html-input').value;
+            const previewBox = document.getElementById('preview-box');
+            previewBox.innerHTML = htmlInput;
+        }
+
+        function checkAnswer(option) {
+            // Add logic to check answers and provide feedback
+        }
+    </script>
+</body>
+</html>
