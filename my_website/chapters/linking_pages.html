@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking Pages in HTML</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header & Footer */
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header nav a, footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover, footer a:hover {
+            background-color: #34495e;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Headings */
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        .example {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../exercises.html">Exercises</a>
+            <a href="../quiz.html">Quiz</a>
+            <a href="../resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Linking Pages in HTML</h1>
+        <section>
+            <h2>What is Linking?</h2>
+            <p>Linking is a fundamental aspect of web development that allows users to navigate between different pages of a website or to external websites. In HTML, links are created using the <code>&lt;a&gt;</code> (anchor) tag.</p>
+        </section>
+
+        <section>
+            <h2>Creating Links</h2>
+            <p>The basic syntax for creating a link is:</p>
+            <div class="code-block">
+                &lt;a href="url"&gt;Link Text&lt;/a&gt;
+            </div>
+            <p>Here, <code>url</code> is the destination of the link, and <code>Link Text</code> is the clickable text that users will see.</p>
+        </section>
+
+        <section>
+            <h2>Types of Links</h2>
+            <div class="example">
+                <h3>1. Internal Links</h3>
+                <p>Internal links connect different pages within the same website. For example:</p>
+                <div class="code-block">
+                    &lt;a href="../index.html"&gt;Go to Home&lt;/a&gt;
+                </div>
+            </div>
+            <div class="example">
+                <h3>2. External Links</h3>
+                <p>External links connect to pages on different websites. For example:</p>
+                <div class="code-block">
+                    &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+                </div>
+            </div>
+            <div class="example">
+                <h3>3. Anchor Links</h3>
+                <p>Anchor links navigate to a specific section within the same page. For example:</p>
+                <div class="code-block">
+                    &lt;a href="#section1"&gt;Jump to Section 1&lt;/a&gt;
+                </div>
+                <p>Make sure to have a corresponding ID in the target section:</p>
+                <div class="code-block">
+                    &lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Best Practices for Linking</h2>
+            <ul>
+                <li>Use descriptive link text that clearly indicates the content of the linked page.</li>
+                <li>Ensure all links are functional and lead to the intended destination.</li>
+                <li>Avoid using generic link text like "Click here" or "Learn more."</li>
+                <li>Use the <code>title</code> attribute to provide additional information about the link.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p><a href="../privacy.html">Privacy Policy</a> | <a href="../terms.html">Terms of Service</a></p>
+        <a href="../index.html">Back to Home</a>
+    </footer>
+</body>
+</html>

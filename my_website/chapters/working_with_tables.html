@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Tables</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header & Footer */
+        header,
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a,
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover,
+        footer a:hover {
+            background-color: #34495e;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Headings */
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .example {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../exercises.html">Exercises</a>
+            <a href="../quiz.html">Quiz</a>
+            <a href="../resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Working with Tables</h1>
+        <section>
+            <h2>Introduction to Tables</h2>
+            <p>Tables are used to display data in a structured format, allowing users to easily read and understand the
+                information. In HTML, tables are created using the <code>&lt;table&gt;</code> tag. Tables are commonly
+                used to display data in a tabular format, making it easier to compare and analyze information.</p>
+            <p>Some common use cases for tables include:</p>
+            <ul>
+                <li>Displaying data in a spreadsheet-like format</li>
+                <li>Comparing features and prices of different products</li>
+                <li>Showing schedules and timetables</li>
+                <li>Presenting statistical data in a clear and concise manner</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Creating a Basic Table</h2>
+            <p>The basic structure of a table includes rows and columns. Here’s how to create a simple table:</p>
+            <div class="code-block">
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </div>
+            <h3>Output:</h3>
+            <table>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                </tr>
+            </table>
+            <h3>Interactive Demo:</h3>
+            <div class="interactive-demo">
+                <table id="demo-table">
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                </table>
+                <button id="add-row-btn">Add Row</button>
+                <button id="remove-row-btn">Remove Row</button>
+                <script>
+                    const addRowBtn = document.getElementById('add-row-btn');
+                    const removeRowBtn = document.getElementById('remove-row-btn');
+                    const demoTable = document.getElementById('demo-table');
+
+                    addRowBtn.addEventListener('click', () => {
+                        const newRow = demoTable.insertRow(-1);
+                        const newCell1 = newRow.insertCell(0);
+                        const newCell2 = newRow.insertCell(1);
+                        newCell1.innerHTML = 'New Data 1';
+                        newCell2.innerHTML = 'New Data 2';
+                    });
+
+                    removeRowBtn.addEventListener('click', () => {
+                        if (demoTable.rows.length > 1) {
+                            demoTable.deleteRow(-1);
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+
+        <section>
+            <h2>Table Attributes and Styles</h2>
+            <p>Tables can be customized using various attributes and styles. Here are some examples:</p>
+            <div class="example">
+                <h3>Border Styles</h3>
+                <p>Use the <code>border</code> attribute to set the border style:</p>
+                <div class="code-block">
+                    &lt;table border="1"&gt;<br>
+                    &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </div>
+                <h3>Output:</h3>
+                <table border="1">
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="example">
+                <h3>Cell Padding and Spacing</h3>
+                <p>Use the <code>cellpadding</code> and <code>cellspacing</code> attributes to adjust the padding and
+                    spacing between cells:</p>
+                <div class="code-block">
+                    &lt;table cellpadding="10" cellspacing="5"&gt;<br>
+                    &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </div>
+                <h3>Output:</h3>
+                <table cellpadding="10" cellspacing="5">
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Best Practices for Tables</h2>
+            <p>Here are some best practices to keep in mind when working with tables:</p>
+            <ul>
+                <li>Use tables only for tabular data, not for layout purposes.</li>
+                <li>Use clear and concise header text to help users understand the data.</li>
+                <li>Avoid using too many columns or rows, as it can make the table difficult to read.</li>
+                <li>Use CSS to style your tables and make them visually appealing.</li>
+                <li>Make sure your tables are accessible by using proper semantic markup and providing alternative text
+                    for images.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p><a href="../privacy.html">Privacy Policy</a> | <a href="../terms.html">Terms of Service</a></p>
+        <a href="../index.html">Back to Home</a>
+    </footer>
+</body>
+
+</html>

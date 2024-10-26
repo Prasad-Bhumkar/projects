@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding Tags</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header & Footer */
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header nav a, footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover, footer a:hover {
+            background-color: #34495e;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Headings */
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        /* Examples */
+        .example {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../exercises.html">Exercises</a>
+            <a href="../quiz.html">Quiz</a>
+            <a href="../resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Embedding Tags</h1>
+        <section>
+            <h2>What are Embedding Tags?</h2>
+            <p>Embedding tags in HTML allow you to include various types of content, such as images, videos, audio files, and other web resources directly within your web pages. This enhances user engagement and provides a richer experience.</p>
+        </section>
+
+        <section>
+            <h2>Embedding Images</h2>
+            <p>To embed an image, use the <code>&lt;img&gt;</code> tag. Here’s an example:</p>
+            <div class="code-block">
+                &lt;img src="path/to/image.jpg" alt="Description of Image" width="600" height="400"&gt;
+            </div>
+            <p>The <code>src</code> attribute specifies the path to the image, and the <code>alt</code> attribute provides alternative text for accessibility. The <code>width</code> and <code>height</code> attributes can be used to set the dimensions of the image.</p>
+        </section>
+
+        <section>
+            <h2>Embedding Videos</h2>
+            <p>To embed a video, you can use the <code>&lt;video&gt;</code> tag. Here’s how:</p>
+            <div class="code-block">
+                &lt;video width="640" height="360" controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="path/to/video.mp4" type="video/mp4"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the video tag.<br>
+                &lt;/video&gt;
+            </div>
+            <p>The <code>controls</code> attribute adds play, pause, and volume controls to the video player. You can also specify multiple source files for different video formats using the <code>&lt;source&gt;</code> tag.</p>
+        </section>
+
+        <section>
+            <h2>Embedding Audio</h2>
+            <p>To embed audio files, use the <code>&lt;audio&gt;</code> tag. Here’s an example:</p>
+            <div class="code-block">
+                &lt;audio controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="path/to/audio.mp3" type="audio/mp3"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the audio tag.<br>
+                &lt;/audio&gt;
+            </div>
+            <p>The <code>controls</code> attribute adds play, pause, and volume controls to the audio player. You can also specify multiple source files for different audio formats using the <code>&lt;source&gt;</code> tag.</p>
+        </section>
+
+        <section>
+            <h2>Embedding iframes</h2>
+            <p>An iframe (short for inline frame) is used to embed another HTML document within the current HTML document. Here’s an example:</p>
+            <div class="code-block">
+                &lt;iframe src="https://www.example.com" width="800" height="600" frameborder="0" scrolling="yes"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support iframes.<br>
+                &lt;/iframe&gt;
+            </div>
+            <p>The <code>src</code> attribute specifies the URL of the HTML document to be embedded, and the <code>width</code> and <code>height</code> attributes set the dimensions of the iframe. The <code>frameborder</code> attribute can be used to add a border around the iframe, and the <code>scrolling</code> attribute enables or disables scrolling within the iframe.</p>
+        </section>
+
+        <section>
+            <h2>Embedding Objects</h2>
+            <p>The <code>&lt;object&gt;</code> tag is used to embed multimedia content, such as Flash animations or PDF files, within an HTML document. Here’s an example:</p>
+            <div class="code-block">
+                &lt;object data="path/to/object.swf" type="application/x-shockwave-flash" width="800" height="600"&gt;<br>
+                &nbsp;&nbsp;&lt;param name="movie" value="path/to/object.swf"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the object tag.<br>
+                &lt;/object&gt;
+            </div>
+            <p>The <code>data</code> attribute specifies the URL of the object to be embedded, and the <code>type</code> attribute specifies the MIME type of the object. The <code>width</code> and <code>height</code> attributes set the dimensions of the object. The <code>&lt;param&gt;</code> tag is used to specify additional parameters for the object.</p>
+        </section>
+
+        <section>
+            <h2>Best Practices for Embedding Tags</h2>
+            <ul>
+                <li>Use descriptive alt text for images to improve accessibility.</li>
+                <li>Optimize images and videos for web use to reduce file size and improve loading times.</li>
+                <li>Provide fallback content for users with older browsers or devices that may not support modern embedding tags.</li>
+                <li>Use the <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> tags to provide a semantic structure for embedded images and other multimedia content.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p><a href="../privacy.html">Privacy Policy</a> | <a href="../terms.html">Terms of Service</a></p>
+        <a href="../index.html">Back to Home</a>
+    </footer>
+</body>
+</html>
