@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nested Frames Example</title>
+    <title>Left Frame</title>
     <style>
         body {
             margin: 0;
@@ -29,32 +29,8 @@
             margin: 0;
         }
 
-        .frame-container {
-            display: flex;
-            height: 80vh;
-        }
-
-        .frame {
-            border: 1px solid #ccc;
-            margin: 5px;
-        }
-
-        .left-frame {
-            width: 30%;
-        }
-
-        .right-frame {
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .top-right-frame {
-            height: 50%;
-        }
-
-        .bottom-right-frame {
-            height: 50%;
+        .content {
+            padding: 20px;
         }
     </style>
 </head>
@@ -70,15 +46,9 @@
         </nav>
     </header>
 
-    <div class="frame-container">
-        <!-- Left Frame -->
-        <iframe class="frame left-frame" src="left_frame.html"></iframe>
-
-        <!-- Right Frame Container -->
-        <div class="right-frame">
-            <iframe class="frame top-right-frame" src="top_right_frame.html"></iframe>
-            <iframe class="frame bottom-right-frame" src="bottom_right_frame.html"></iframe>
-        </div>
+    <div class="content">
+        <h1>Left Frame Content</h1>
+        <p>This is the content of the left frame.</p>
     </div>
 
     <footer>
