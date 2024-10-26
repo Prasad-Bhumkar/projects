@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Frames and Frame Sets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .example {
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        pre {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../exercises.html">Exercises</a>
+            <a href="../quiz.html">Quiz</a>
+            <a href="../resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Working with Frames and Frame Sets</h1>
+        <p>Frames and framesets allow you to divide your web page into multiple sections, each capable of loading different documents. This technique can be useful for creating layouts that display various content simultaneously, such as navigation menus, advertisements, or supplementary information.</p>
+
+        <h2>Using Iframes</h2>
+        <p>The <code>&lt;iframe&gt;</code> tag is used to embed another HTML document within the current document. It allows for more flexibility and control compared to traditional framesets. Here’s an example of how to use an iframe:</p>
+        <div class="example">
+            <h3>Example of an Iframe</h3>
+            <iframe src="https://www.example.com" width="100%" height="300" style="border: 1px solid #bdc3c7;"></iframe>
+            <p>This iframe loads content from <a href="https://www.example.com" target="_blank">example.com</a>.</p>
+        </div>
+
+        <h2>Using Framesets (Deprecated)</h2>
+        <p>Framesets are defined using the <code>&lt;frameset&gt;</code> tag, which is now deprecated in HTML5. While they were once popular for creating multi-frame layouts, they can lead to navigation and accessibility issues. Here’s a basic example:</p>
+        <div class="example">
+            <h3>Example of a Frameset</h3>
+            <pre>
+&lt;html&gt;
+&lt;frameset cols="50%,50%"&gt;
+    &lt;frame src="left_frame.html"&gt;
+    &lt;frame src="right_frame.html"&gt;
+&lt;/frameset&gt;
+&lt;/html&gt;
+            </pre>
+            <p>This code creates a frameset with two columns, each loading a different frame. However, consider using CSS for layout instead.</p>
+        </div>
+
+        <h2>Best Practices</h2>
+        <ul>
+            <li>Use iframes for modern web design instead of framesets.</li>
+            <li>Avoid using framesets as they can create issues with navigation and accessibility.</li>
+            <li >Ensure that your site is responsive, as frames can complicate layouts on different screen sizes.</li>
+            <li>Use CSS for layout and styling instead of relying on frames and framesets.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p><a href="../privacy.html" style="color: white;">Privacy Policy</a> | <a href="../terms.html" style="color: white;">Terms of Service</a></p>
+        <a href="../index.html" style="color: white;">Back to Home</a>
+    </footer>
+</body>
+
+</html>
