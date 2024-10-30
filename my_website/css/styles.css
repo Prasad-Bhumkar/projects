@@ -153,11 +153,11 @@ footer a:hover {
 @media (max-width: 768px) {
     /* Responsive Navigation */
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
     }
     /* Responsive Container */
     .container {
-        flex-direction: column;
+        flex-direction: row;
     }
     /* Responsive Sidebar */
     .sidebar {
