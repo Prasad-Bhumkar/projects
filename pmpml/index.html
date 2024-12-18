@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMPML Pass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="pmpml-logo.png" alt="PMPML Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="कुठे जायचे आहे?">
+            </div>
+            <div class="user-icon">
+                <img src="user-icon.png" alt="User Icon">
+            </div>
+        </div>
+        <div class="options">
+            <div class="option">
+                <img src="bus-ticket-icon.png" alt="Bus Ticket Icon">
+                <p>Bus Ticket</p>
+            </div>
+            <div class="option">
+                <img src="daily-pass-icon.png" alt="Daily Pass Icon">
+                <p>Daily Pass</p>
+            </div>
+        </div>
+        <div class="tickets">
+            <div class="ticket" id="view-ticket">
+                <img src="ticket-icon.png" alt="Ticket Icon">
+                <p>View Ticket</p>
+            </div>
+            <div class="ticket" id="view-pass">
+                <img src="pass-icon.png" alt="Pass Icon">
+                <p>View Pass</p>
+            </div>
+            <div class="ticket">
+                <img src="route-timetable-icon.png" alt="Route Timetable Icon">
+                <p>Route Timetable</p>
+            </div>
+            <div class="ticket">
+                <img src="metro-ticket-icon.png" alt="Metro Ticket Icon"> <p>Metro Ticket</p>
+            </div>
+        </div>
+        <div class="pass-display" id="pass-display" style="display: none;">
+            <h2>Your Pass</h2>
+            <p id="current-time"></p>
+            <p id="current-date"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
