@@ -1,0 +1,129 @@
+# Proposed Project Structure for Rent4Ride App
+
+## Root Directory:
+- **Indicab/** - The main project directory.
+
+
+## Backend Directory:
+- **backend/** - Contains the Spring Boot backend application.
+  - **src/main/java/com/rent4ride/** - Java source code.
+    - **controller/** - Contains Spring MVC controllers to handle API requests.
+      - **AuthController.java** - Handles user authentication (sign-in, sign-up).
+      - **CarController.java** - Handles car-related operations (search, details).
+      - **BookingController.java** - Handles booking operations.
+      - **PaymentController.java** - Handles payment processing.
+      - **UserController.java** - Handles user profile operations.
+      - **DocumentController.java** - Handles document upload.
+      - **LocationController.java** - Handles location-related operations.
+    - **dto/** - Data Transfer Objects for API requests and responses.
+      - **AuthRequest.java** - Sign-in request DTO.
+      - **SignupRequest.java** - Sign-up request DTO.
+      - **CarDTO.java** - Car data DTO.
+      - **BookingDTO.java** - Booking data DTO.
+      - **PaymentRequest.java** - Payment request DTO.
+      - **UserProfileDTO.java** - User profile DTO.
+      - **LocationDTO.java** - Location data transfer object.
+    - **entity/** - JPA entities representing database tables.
+      - **User.java** - Represents a user in the system.
+      - **Car.java** - Represents a car available for rent.
+      - **Location.java** - Represents a location for car pickup/drop-off.
+      - **Booking.java** - Represents a booking made by a user.
+      - **PaymentDetails.java** - Represents payment information for bookings.
+      - **Document.java** - Represents documents uploaded by users.
+    - **repository/** - Spring Data JPA repositories for database access.
+      - **UserRepository.java** - Provides methods to access user data.
+      - **CarRepository.java** - Provides methods to access car data.
+      - **LocationRepository.java** - Provides methods to access location data.
+      - **BookingRepository.java** - Provides methods to access booking data.
+      - **PaymentDetailsRepository.java** - Provides methods to access payment details.
+      - **DocumentRepository.java** - Provides methods to access uploaded documents.
+    - **security/** - Spring Security configuration and JWT implementation.
+      - **JwtTokenProvider.java** - Generates and validates JWT tokens for authentication.
+      - **JwtRequestFilter.java** - Intercepts requests and validates JWT tokens.
+      - **UserDetailsServiceImpl.java** - Loads user details for authentication.
+      - **SecurityConfig.java** - Configures Spring Security settings.
+    - **service/** - Business logic services.
+      - **AuthService.java** - Handles authentication logic.
+      - **CarService.java** - Contains business logic for car operations.
+      - **BookingService.java** - Contains business logic for booking operations.
+      - **PaymentService.java** - Contains business logic for payment processing.
+      - **UserService.java** - Contains business logic for user profile management.
+      - **DocumentService.java** - Contains business logic for document handling.
+    - **util/** - Utility classes.
+- **IndicabApplication.java** - Main Spring Boot application class that starts the application.
+
+  - **src/main/resources/** - Resources directory.
+    - **application.properties** or **application.yml** - Configuration settings for the application.
+    - **pom.xml** (or **build.gradle**) - Build configuration file for Maven or Gradle.
+
+## Android Directory:
+- **android/** - Contains the Android project.
+  - **app/src/main/** - Main source code and resources.
+    - **AndroidManifest.xml** - Contains essential information about the app for the Android system.
+    - **java/com/rent4ride/** - Kotlin source code.
+      - **model/** - Data classes representing the app's data structure.
+        - **Car.kt** - Represents a car's data.
+        - **Booking.kt** - Represents booking data.
+        - **User.kt** - Represents user data.
+        - **Location.kt** - Represents location data.
+      - **network/** - Networking setup using Retrofit.
+        - **ApiService.kt** - Defines API endpoints for network requests.
+        - **RetrofitClient.kt** - Configures the Retrofit client for making API calls.
+      - **ui/** - UI components (activities, fragments, view models).
+        - **activity/** - Activities that represent screens in the app.
+          - **SearchActivity.kt** - Main search screen for finding cars.
+          - **SignInActivity.kt** - Screen for user sign-in.
+          - **SignUpActivity.kt** - Screen for user registration.
+          - **CarDetailsActivity.kt** - Displays details of a selected car.
+          - **BookingConfirmationActivity.kt** - Displays booking confirmation details.
+          - **PaymentActivity.kt** - Handles payment processing.
+          - **ProfileActivity.kt** - Displays and manages user profile.
+          - **UploadDocumentActivity.kt** - Allows users to upload documents.
+          - **MainActivity.kt** - Main activity that contains the navigation drawer.
+        - **fragment/** - Fragments that represent parts of the UI.
+          - **SearchResultsFragment.kt** - Displays search results for cars.
+          - **MyBookingsFragment.kt** - Displays user's booking history.
+        - **adapter/** - RecyclerView adapters for displaying lists.
+          - **CarAdapter.kt** - Adapter for displaying cars in search results.
+          - **BookingAdapter.kt** - Adapter for displaying bookings.
+        - **viewmodel/** - ViewModels for managing UI-related data.
+          - **SearchViewModel.kt** - ViewModel for managing search data.
+          - **SignInViewModel.kt** - ViewModel for managing sign-in data.
+          - **SignUpViewModel.kt** - ViewModel for managing sign-up data.
+          - **CarDetailsViewModel.kt** - ViewModel for managing car details.
+          - **BookingViewModel.kt** - ViewModel for managing booking data.
+          - **ProfileViewModel.kt** - ViewModel for managing user profile data.
+        - **dialog/** - Custom dialog classes for user interactions.
+        - **util/** - Utility classes for common functions.
+          - **Constants.kt** - Contains constant values used throughout the app.
+          - **Utils.kt** - Contains utility functions for various tasks.
+- **IndicabApplication.kt** - Main application class for the Android app.
+
+      - **res/** - Resources for the Android app.
+        - **layout/** - XML layout files for activities and fragments.
+          - **activity_search.xml** - Layout for the search activity.
+          - **activity_sign_in.xml** - Layout for the sign-in activity.
+          - **activity_sign_up.xml** - Layout for the sign-up activity.
+          - **fragment_search_results.xml** - Layout for displaying search results.
+          - **activity_car_details.xml** - Layout for car details screen.
+          - **activity_booking_confirmation.xml** - Layout for booking confirmation.
+          - **activity_payment.xml** - Layout for payment processing.
+          - **fragment_my_bookings.xml** - Layout for displaying user bookings.
+          - **activity_profile.xml** - Layout for user profile management.
+          - **activity_upload_document.xml** - Layout for document upload.
+          - **activity_main.xml** - Layout for the main activity.
+          - **drawer_layout.xml** - Layout for the navigation drawer.
+          - **nav_header_main.xml** - Layout for the navigation drawer header.
+          - **car_item.xml** - Layout for displaying a car item.
+          - **booking_item.xml** - Layout for displaying a booking item.
+        - **drawable/** - Image assets used in the app.
+        - **values/** - Values such as strings, colors, and styles.
+          - **strings.xml** - Contains string resources.
+          - **colors.xml** - Contains color resources.
+          - **styles.xml** - Contains style resources.
+        - **navigation/** - Navigation graph for the app.
+          - **nav_graph.xml** - Defines navigation paths between screens.
+        - **mipmap/** - App icons used in the launcher.
+    - **build.gradle** - Module-level Gradle build file for dependencies.
+    - **build.gradle** - Project-level Gradle build file for project configuration.
+    - **settings.gradle** - Project settings for Gradle.
