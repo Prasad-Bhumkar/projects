@@ -2,13 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Indicab - Tourism Website Template</title>
-
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
+  <meta charset="utf-8" />
+  <title>IndiCab - Travel & Tour Booking HTML Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Free HTML Templates" name="keywords" />
+  <meta content="Free HTML Templates" name="description" />
+  <link href="img/favicon.ico" rel="icon" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,44 +35,44 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Indicab",
+        "url": "https://www.indicab.com",
+        "logo": "img/carousel-1.jpg",
+        "description": "Indicab is a trusted travel agency offering seamless city rides, airport transfers, and curated tours in Pune and beyond.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Street",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "postalCode": "411001",
+            "addressCountry": "IN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-1234567890",
+            "contactType": "Customer Service"
+        },
+        "sameAs": [
+            "https://x.com/bhumkar_pr89871",
+            "https://www.facebook.com/profile.php?id=100071592072649",
+            "https://www.linkedin.com/in/prasad-bhumkar-613359213/",
+            "https://www.instagram.com/prasad.bhumkar_official/",
+            "https://www.youtube.com/@youtubemafia9893"
+        ]
+    }
+    </script>
 </head>
 
 <body>
 
     <!-- Spinner Start -->
     <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                        href="https://x.com/bhumkar_pr89871"><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                        href="https://www.facebook.com/profile.php?id=100071592072649"><i
-                            class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                        href="https://www.linkedin.com/in/prasad-bhumkar-613359213/"><i
-                            class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                        href="https://www.instagram.com/prasad.bhumkar_official/"><i
-                            class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
-                        href=" https://www.youtube.com/@youtubemafia9893?sub_confirmation=1"><i
-                            class="fab fa-youtube fw-normal"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
-                    <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
+                    <a href="login.html"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i
                                     class="fa fa-home me-2"></i> My Dashboard</small></a>
@@ -138,7 +145,7 @@
                                 <p class="mb-4 fs-5">Get to your destination quickly and safely with our reliable
                                     ride-hailing service. Serving all of Pune.</p>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <a class="btn-primary rounded-pill text-white py-3 px-5" href="#book-ride">Book a
+                                    <a class="btn-book-ride rounded-pill text-white py-3 px-5" href="#book-ride">Book a
                                         Ride Now</a>
                                 </div>
                             </div>
@@ -217,7 +224,7 @@
                 <div class="col-lg-5">
                     <div class="h-100"
                         style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
-                        <img src="img/about-img.jpg" class="img-fluid w-100 h-100" alt="">
+                        <img src="img/about-img.jpg" class="img-fluid w-100 h-100" alt="About Indicab">
                     </div>
                 </div>
                 <div class="col-lg-7"
@@ -397,364 +404,708 @@
         <div class="container py-5">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Destination</h5>
-                <h1 class="mb-0">Popular Destination</h1>
+                <h1 class="mb-0">Popular Destinations in Maharashtra</h1>
+                <p class="text-muted mt-3">Explore the diverse beauty, rich history, and cultural heritage of
+                    Maharashtra</p>
             </div>
             <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                    <li class="nav-item">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5" role="tablist">
+                    <li class="nav-item" role="presentation">
                         <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
-                            data-bs-toggle="pill" href="#tab-1">
+                            data-bs-toggle="pill" href="#tab-1" role="tab" aria-selected="true"
+                            aria-label="All destinations">
                             <span class="text-dark" style="width: 150px;">All</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="presentation">
                         <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-2">
+                            href="#tab-2" role="tab" aria-selected="false" aria-label="Mumbai destinations">
                             <span class="text-dark" style="width: 150px;">Mumbai</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="presentation">
                         <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-3">
+                            href="#tab-3" role="tab" aria-selected="false" aria-label="Pune destinations">
                             <span class="text-dark" style="width: 150px;">Pune</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="presentation">
                         <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-4">
+                            href="#tab-4" role="tab" aria-selected="false" aria-label="Nashik destinations">
                             <span class="text-dark" style="width: 150px;">Nashik</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="presentation">
                         <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-5">
+                            href="#tab-5" role="tab" aria-selected="false" aria-label="Goa destinations">
                             <span class="text-dark" style="width: 150px;">Goa</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="presentation">
                         <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-6">
+                            href="#tab-6" role="tab" aria-selected="false" aria-label="Aurangabad destinations">
                             <span class="text-dark" style="width: 150px;">Aurangabad</span>
                         </a>
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <!-- ALL Destinations Tab -->
+                    <div id="tab-1" class="tab-pane fade show p-0 active" role="tabpanel">
                         <div class="row g-4">
-                            <div class="col-xl-8">
-                                <div class="row g-4">
-                                    <div class="col-lg-6">
-                                        <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="img/destination-mumbai.jpg" alt="">
-                                            <div class="destination-overlay p-4">
-                                                <a href="#"
-                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                                    Photos</a>
-                                                <h4 class="text-white mb-2 mt-3">Mumbai City</h4>
-                                                <a href="#" class="btn-hover text-white">View All Place <i
-                                                        class="fa fa-arrow-right ms-2"></i></a>
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/destination-mumbai.jpg" data-lightbox="destination-mumbai"><i
-                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="img/destination-pune.jpg" alt="">
-                                            <div class="destination-overlay p-4">
-                                                <a href="#"
-                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                                    Photos</a>
-                                                <h4 class="text-white mb-2 mt-3">Pune City</h4>
-                                                <a href="#" class="btn-hover text-white">View All Place <i
-                                                        class="fa fa-arrow-right ms-2"></i></a>
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/destination-pune.jpg" data-lightbox="destination-pune"><i
-                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="img/destination-nashik.jpg" alt="">
-                                            <div class="destination-overlay p-4">
-                                                <a href="#"
-                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                                    Photos</a>
-                                                <h4 class="text-white mb-2 mt-3">Nashik City</h4>
-                                                <a href="#" class="btn-hover text-white">View All Place <i
-                                                        class="fa fa-arrow-right ms-2"></i></a>
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/destination-nashik.jpg" data-lightbox="destination-nashik><i
-                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="img/destination-aurangabad.jpg" alt="">
-                                            <div class="destination-overlay p-4">
-                                                <a href="#"
-                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                                    Photos</a>
-                                                <h4 class="text-white mb-2 mt-3">Aurangabad City</h4>
-                                                <a href="#" class="btn-hover text-white">View All Place <i
-                                                        class="fa fa-arrow-right ms-2"></i></a>
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/destination-aurangabad.jpg" data-lightbox="destination-aurangabad><i
-                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- Featured Maharashtra Image - Large -->
                             <div class="col-xl-4">
                                 <div class="destination-img h-100">
                                     <img class="img-fluid rounded w-100 h-100" src="img/destination-maharashtra.jpg"
-                                        style="object-fit: cover; min-height: 300px;" alt="">
+                                        style="object-fit: cover; min-height: 300px;"
+                                        alt="Beautiful landscapes of Maharashtra" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20+
                                             Photos</a>
                                         <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <p class="text-white mb-2">Land of magnificent forts, beaches, and pilgrimage
+                                            sites</p>
+                                        <a href="#" class="btn-hover text-white">View All Places <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-maharashtra.jpg" data-lightbox="destination-maharashtra"><i
+                                        <a href="img/destination-maharashtra.jpg"
+                                            data-lightbox="destination-maharashtra"
+                                            title="Maharashtra landscapes and attractions"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Major City Grid -->
+                            <div class="col-xl-8">
+                                <div class="row g-4">
+                                    <!-- Mumbai -->
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="img/destination-mumbai.jpg"
+                                                alt="Mumbai cityscape with Gateway of India" loading="lazy">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">25+
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">Mumbai City</h4>
+                                                <p class="text-white mb-2">Financial capital with colonial architecture
+                                                    and vibrant culture</p>
+                                                <a href="#tab-2" data-bs-toggle="pill" class="btn-hover text-white">View
+                                                    All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="img/destination-mumbai.jpg" data-lightbox="destination-mumbai"
+                                                    title="Gateway of India and Mumbai skyline"><i
+                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Pune -->
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="img/destination-pune.jpg"
+                                                alt="Historical Shaniwar Wada in Pune" loading="lazy">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">20+
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">Pune City</h4>
+                                                <p class="text-white mb-2">Cultural capital with historical forts and
+                                                    temples</p>
+                                                <a href="#tab-3" data-bs-toggle="pill" class="btn-hover text-white">View
+                                                    All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="img/destination-pune.jpg" data-lightbox="destination-pune"
+                                                    title="Historical architecture of Pune"><i
+                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Nashik -->
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="img/destination-nashik.jpg"
+                                                alt="Temples and vineyards of Nashik" loading="lazy">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">18+
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">Nashik City</h4>
+                                                <p class="text-white mb-2">Wine country with ancient temples and Kumbh
+                                                    Mela site</p>
+                                                <a href="#tab-4" data-bs-toggle="pill" class="btn-hover text-white">View
+                                                    All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="img/destination-nashik.jpg" data-lightbox="destination-nashik"
+                                                    title="Temples and Godavari riverbank in Nashik"><i
+                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Aurangabad -->
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="img/destination-aurangabad.jpg"
+                                                alt="Bibi Ka Maqbara in Aurangabad" loading="lazy">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">22+
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">Aurangabad City</h4>
+                                                <p class="text-white mb-2">Home to UNESCO sites Ajanta and Ellora Caves
+                                                </p>
+                                                <a href="#tab-6" data-bs-toggle="pill" class="btn-hover text-white">View
+                                                    All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="img/destination-aurangabad.jpg"
+                                                    data-lightbox="destination-aurangabad"
+                                                    title="Bibi Ka Maqbara - the Mini Taj Mahal"><i
+                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Highlighted Locations (3-column) -->
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/destination-lonavala.jpg"
+                                        alt="Scenic hill station of Lonavala" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">15+
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Lonavala & Khandala</h4>
+                                        <p class="text-white mb-2">Popular hill stations with lush valleys and
+                                            waterfalls</p>
+                                        <a href="#" class="btn-hover text-white">View All Places <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/destination-lonavala.jpg" data-lightbox="destination-lonavala"
+                                            title="Beautiful scenery of Lonavala hills"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-jaipur.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/destination-shirdi.jpg"
+                                        alt="Sai Baba Temple in Shirdi" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">12+
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Jaipur</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Shirdi</h4>
+                                        <p class="text-white mb-2">Spiritual site famous for Sai Baba Temple</p>
+                                        <a href="#" class="btn-hover text-white">View All Places <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-jaipur.jpg" data-lightbox="destination-jaipur><i
+                                        <a href="img/destination-shirdi.jpg" data-lightbox="destination-shirdi"
+                                            title="Sacred Sai Baba Temple in Shirdi"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-kerla.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/destination-alibaug.jpg"
+                                        alt="Beaches of Alibaug" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">16+
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Kerla</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Alibaug</h4>
+                                        <p class="text-white mb-2">Coastal town with beautiful beaches and historic
+                                            forts</p>
+                                        <a href="#" class="btn-hover text-white">View All Places <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-kerla.jpg" data-lightbox="destination-kerla"><i
-                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-mysore.jpg" alt="">
-                                    <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                            Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Mysore</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                    <div class="search-icon">
-                                        <a href="img/destination-mysore.jpg" data-lightbox="destination-mysore"><i
+                                        <a href="img/destination-alibaug.jpg" data-lightbox="destination-alibaug"
+                                            title="Scenic beaches of Alibaug"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="tab-2" class="tab-pane fade show p-0">
+
+                    <!-- MUMBAI Tab -->
+                    <div id="tab-2" class="tab-pane fade show p-0" role="tabpanel">
+                        <h3 class="mb-4">Explore Mumbai</h3>
+                        <div class="category-navigation mb-4">
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Historical Sites</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Religious Places</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Beaches</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Modern Attractions</span>
+                        </div>
                         <div class="row g-4">
+                            <!-- Gateway of India -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/gateway-of-india.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/gateway-of-india.jpg"
+                                        alt="The iconic Gateway of India on Mumbai's waterfront" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">18
                                             Photos</a>
                                         <h4 class="text-white mb-2 mt-3">Gateway of India</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <p class="text-white mb-2">Historic arch monument overlooking the Arabian Sea
+                                        </p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/gateway-of-india.jpg" data-lightbox="gateway-of-india"><i
+                                        <a href="img/gateway-of-india.jpg" data-lightbox="gateway-of-india"
+                                            title="Gateway of India - Historic monument built during the British Raj"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Taj Mahal Palace -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/taj-mahal-palace.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/taj-mahal-palace.jpg"
+                                        alt="The luxurious Taj Mahal Palace Hotel" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">15
                                             Photos</a>
                                         <h4 class="text-white mb-2 mt-3">Taj Mahal Palace</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <p class="text-white mb-2">Iconic 5-star luxury hotel with stunning architecture
+                                        </p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/taj-mahal-palace.jpg" data-lightbox="taj-mahal-palace><i
+                                        <a href="img/taj-mahal-palace.jpg" data-lightbox="taj-mahal-palace"
+                                            title="The historic Taj Mahal Palace Hotel facing the Gateway of India"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CST/Victoria Terminus -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/cst-terminus.jpg"
+                                        alt="UNESCO World Heritage Site Chhatrapati Shivaji Terminus" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">12
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Chhatrapati Shivaji Terminus</h4>
+                                        <p class="text-white mb-2">UNESCO heritage railway station with Victorian Gothic
+                                            design</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/cst-terminus.jpg" data-lightbox="cst-terminus"
+                                            title="Historic Chhatrapati Shivaji Terminus (Victoria Terminus)"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Marine Drive -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/marine-drive.jpg"
+                                        alt="Marine Drive coastline at night" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">10
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Marine Drive</h4>
+                                        <p class="text-white mb-2">C-shaped coastline known as the Queen's Necklace</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/marine-drive.jpg" data-lightbox="marine-drive"
+                                            title="Marine Drive - The Queen's Necklace at night"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="tab-3" class="tab-pane fade show p-0">
+
+                    <!-- PUNE Tab -->
+                    <div id="tab-3" class="tab-pane fade show p-0" role="tabpanel">
+                        <h3 class="mb-4">Explore Pune</h3>
+                        <div class="category-navigation mb-4">
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Historical Sites</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Religious Places</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Museums</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Nature</span>
+                        </div>
                         <div class="row g-4">
+                            <!-- Shaniwar Wada -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/shaniwar-wada.jpg"
+                                        alt="Historic Shaniwar Wada fort in Pune" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">14
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Shaniwar Wada</h4>
+                                        <p class="text-white mb-2">Historic fortification and former seat of the Peshwas
+                                        </p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-5.jpg" data-lightbox="destination-5"><i
+                                        <a href="img/shaniwar-wada.jpg" data-lightbox="shaniwar-wada"
+                                            title="The historic Peshwa palace of Shaniwar Wada"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Aga Khan Palace -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-mysore.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/aga-khan-palace.jpg"
+                                        alt="Majestic Aga Khan Palace in Pune" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">12
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Aga Khan Palace</h4>
+                                        <p class="text-white mb-2">Memorial with Gandhi history and beautiful
+                                            architecture</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-mysore.jpg" data-lightbox="destination-mysore"><i
+                                        <a href="img/aga-khan-palace.jpg" data-lightbox="aga-khan-palace"
+                                            title="Aga Khan Palace - A monument of national importance"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sinhagad Fort -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/sinhagad-fort.jpg"
+                                        alt="Ancient Sinhagad Fort on hilltop" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">16
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Sinhagad Fort</h4>
+                                        <p class="text-white mb-2">Historic mountain fortress with panoramic views</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/sinhagad-fort.jpg" data-lightbox="sinhagad-fort"
+                                            title="Sinhagad Fort - Ancient fortress with historical significance"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Dagdusheth Ganpati Temple -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/dagdusheth-temple.jpg"
+                                        alt="Ornate Dagdusheth Halwai Ganpati Temple" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">10
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Dagdusheth Halwai Ganpati Temple</h4>
+                                        <p class="text-white mb-2">Popular temple with magnificent Ganesh idol</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/dagdusheth-temple.jpg" data-lightbox="dagdusheth-temple"
+                                            title="Shreemant Dagdusheth Halwai Ganpati Temple - Famous religious site"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="tab-4" class="tab-pane fade show p-0">
+
+                    <!-- NASHIK Tab -->
+                    <div id="tab-4" class="tab-pane fade show p-0" role="tabpanel">
+                        <h3 class="mb-4">Explore Nashik</h3>
+                        <div class="category-navigation mb-4">
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Religious Sites</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Vineyards</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Caves</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Nature</span>
+                        </div>
                         <div class="row g-4">
+                            <!-- Trimbakeshwar Temple -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/trimbakeshwar-temple.jpg"
+                                        alt="Ancient Trimbakeshwar Jyotirlinga Temple" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">12
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Trimbakeshwar Temple</h4>
+                                        <p class="text-white mb-2">Ancient temple housing one of the 12 Jyotirlingas</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-5.jpg" data-lightbox="destination-5"><i
+                                        <a href="img/trimbakeshwar-temple.jpg" data-lightbox="trimbakeshwar-temple"
+                                            title="Trimbakeshwar Temple - One of the holiest Shiva temples"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Sula Vineyards -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-mysore.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/sula-vineyards.jpg"
+                                        alt="Beautiful Sula Vineyards with winery" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">15
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Sula Vineyards</h4>
+                                        <p class="text-white mb-2">India's premier winery with tours and tastings</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-mysore.jpg" data-lightbox="destination-mysore"><i
+                                        <a href="img/sula-vineyards.jpg" data-lightbox="sula-vineyards"
+                                            title="Sula Vineyards - India's leadingwinery"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Kumbh Mela Site -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/kumbh-mela.jpg"
+                                        alt="Kumbh Mela festival in Nashik" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Kumbh Mela Site</h4>
+                                        <p class="text-white mb-2">World's largest religious gathering held every 12
+                                            years</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/kumbh-mela.jpg" data-lightbox="kumbh-mela"
+                                            title="Kumbh Mela - A grand festival of faith"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pandav Leni Caves -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/pandav-leni.jpg"
+                                        alt="Ancient Pandav Leni Caves" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">10
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Pandav Leni Caves</h4>
+                                        <p class="text-white mb-2">Rock-cut caves with ancient Buddhist sculptures</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/pandav-leni.jpg" data-lightbox="pandav-leni"
+                                            title="Pandav Leni - Historical rock-cut caves"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="tab-5" class="tab-pane fade show p-0">
+
+                    <!-- GOA Tab -->
+                    <div id="tab-5" class="tab-pane fade show p-0" role="tabpanel">
+                        <h3 class="mb-4">Explore Goa</h3>
+                        <div class="category-navigation mb-4">
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Beaches</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Nightlife</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Water Sports</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Heritage Sites</span>
+                        </div>
                         <div class="row g-4">
+                            <!-- Baga Beach -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/baga-beach.jpg"
+                                        alt="Baga Beach in Goa" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">30
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Baga Beach</h4>
+                                        <p class="text-white mb-2">Famous beach known for its nightlife and water sports
+                                        </p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-5.jpg" data-lightbox="destination-5"><i
+                                        <a href="img/baga-beach.jpg" data-lightbox="baga-beach"
+                                            title="Baga Beach - A popular destination for tourists"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Anjuna Beach -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/anjuna-beach.jpg"
+                                        alt="Anjuna Beach in Goa" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">25
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Anjuna Beach</h4>
+                                        <p class="text-white mb-2">Known for its vibrant flea market and nightlife</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/anjuna-beach.jpg" data-lightbox="anjuna-beach"
+                                            title="Anjuna Beach - A hub for party lovers"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Fort Aguada -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-mysore.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/fort-aguada.jpg"
+                                        alt="Fort Aguada in Goa" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">15
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Fort Aguada</h4>
+                                        <p class="text-white mb-2">Historic fort with stunning views of the Arabian Sea
+                                        </p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-mysore.jpg" data-lightbox="destination-mysore"><i
+                                        <a href="img/fort-aguada.jpg" data-lightbox="fort-aguada"
+                                            title="Fort Aguada - A well-preserved 17th-century fort"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Basilica of Bom Jesus -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/basilica-bom-jesus.jpg"
+                                        alt="Basilica of Bom Jesus in Goa" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Basilica of Bom Jesus</h4>
+                                        <p class="text-white mb-2">UNESCO World Heritage Site known for its baroque
+                                            architecture</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/basilica-bom-jesus.jpg" data-lightbox="basilica-bom-jesus"
+                                            title="Basilica of Bom Jesus - A significant religious site"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="tab-6" class="tab-pane fade show p-0">
+
+                    <!-- AURANGABAD Tab -->
+                    <div id="tab-6" class="tab-pane fade show p-0" role="tabpanel">
+                        <h3 class="mb-4">Explore Aurangabad</h3>
+                        <div class="category-navigation mb-4">
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Heritage Sites</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Caves</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Temples</span>
+                            <span class="badge rounded-pill bg-primary me-2 px-3 py-2 mb-2">Nature</span>
+                        </div>
                         <div class="row g-4">
+                            <!-- Ajanta Caves -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/ajanta-caves.jpg"
+                                        alt="Ajanta Caves in Aurangabad" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">30
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Ajanta Caves</h4>
+                                        <p class="text-white mb-2">UNESCO World Heritage Site with ancient rock-cut
+                                            Buddhist caves</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-5.jpg" data-lightbox="destination-5"><i
+                                        <a href="img/ajanta-caves.jpg" data-lightbox="ajanta-caves"
+                                            title="Ajanta Caves - A marvel of ancient Indian art"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Ellora Caves -->
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="img/destination-mysore.jpg" alt="">
+                                    <img class="img-fluid rounded w-100" src="img/ellora-caves.jpg"
+                                        alt="Ellora Caves in Aurangabad" loading="lazy">
                                     <div class="destination-overlay p-4">
-                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">25
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">Maharashtra</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Ellora Caves</h4>
+                                        <p class="text-white mb-2">Famous for its monumental rock-cut temples and
+                                            monasteries</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="img/destination-mysore.jpg" data-lightbox="destination-mysore"><i
+                                        <a href="img/ellora-caves.jpg" data-lightbox="ellora-caves"
+                                            title="Ellora Caves - A UNESCO World Heritage Site"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bibi Ka Maqbara -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/bibi-ka-maqbara.jpg"
+                                        alt="Bibi Ka Maqbara in Aurangabad" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Bibi Ka Maqbara</h4>
+                                        <p class="text-white mb-2">Known as the 'Mini Taj Mahal', a beautiful mausoleum
+                                        </p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/bibi-ka-maqbara.jpg" data-lightbox="bibi-ka-maqbara"
+                                            title="Bibi Ka Maqbara - A symbol of love and architecture"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Panchakki -->
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/panchakki.jpg"
+                                        alt="Panchakki in Aurangabad" loading="lazy">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">15
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Panchakki</h4>
+                                        <p class="text-white mb-2">Historic water mill and a significant site of the
+                                            Sufi saint</p>
+                                        <a href="#" class="btn-hover text-white">View Details <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/panchakki.jpg" data-lightbox="panchakki"
+                                            title="Panchakki - A historical water mill with beautiful gardens"><i
+                                                class=" fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -766,369 +1117,206 @@
     </div>
     <!-- Destination End -->
 
-    <!-- Explore Tour Start -->
-    <div class="container-fluid ExploreTour py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                <h5 class="section-title px-3">Explore Tour</h5>
-                <h1 class="mb-4">The World</h1>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto
-                    doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat
-                    corrupti eum cum repellat a laborum quasi.
-                </p>
-            </div>
-            <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
-                            data-bs-toggle="pill" href="#NationalTab-1">
-                            <span class="text-dark" style="width: 250px;">National Tour Category</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#InternationalTab-2">
-                            <span class="text-dark" style="width: 250px;">International tour Category</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="NationalTab-1" class="tab-pane fade show p-0 active">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Weekend Tour</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Holiday Tour</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Road Trip</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="tour-offer bg-info">15% Off</div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Historical Trip</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Family Tour</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="tour-offer bg-warning">50% Off</div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="img/explore-tour-6.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Beach Tour</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="InternationalTab-2" class="tab-pane fade show p-0">
-                        <div class="InternationalTour-carousel owl-carousel">
-                            <div class="international-item">
-                                <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="international-content">
-                                    <div class="international-info">
-                                        <h5 class="text-white text-uppercase mb-2">Australia</h5>
-                                        <a href="#" class="btn-hover text-white me-4"><i
-                                                class="fas fa-map-marker-alt me-1"></i> 8 Cities</a>
-                                        <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
-                                            <span>143+ Tour Places</span></a>
-                                    </div>
-                                </div>
-                                <div class="tour-offer bg-success">30% Off</div>
-                                <div class="international-plus-icon">
-                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                            <div class="international-item">
-                                <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="international-content">
-                                    <div class="international-info">
-                                        <h5 class="text-white text-uppercase mb-2">Germany</h5>
-                                        <a href="#" class="btn-hover text-white me-4"><i
-                                                class="fas fa-map-marker-alt me-1"></i> 12 Cities</a>
-                                        <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
-                                            <span>21+ Tour Places</span></a>
-                                    </div>
-                                </div>
-                                <div class="international-plus-icon">
-                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                            <div class="international-item">
-                                <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="international-content">
-                                    <div class="tour-offer bg-warning">45% Off</div>
-                                    <div class="international-info">
-                                        <h5 class="text-white text-uppercase mb-2">Spain</h5>
-                                        <a href="#" class="btn-hover text-white me-4"><i
-                                                class="fas fa-map-marker-alt me-1"></i> 9 Cities</a>
-                                        <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
-                                            <span>133+ Tour Places</span></a>
-                                    </div>
-                                </div>
-                                <div class="international-plus-icon">
-                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                            <div class="international-item">
-                                <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="international-content">
-                                    <div class="international-info">
-                                        <h5 class="text-white text-uppercase mb-2">Japan</h5>
-                                        <a href="#" class="btn-hover text-white me-4"><i
-                                                class="fas fa-map-marker-alt me-1"></i> 8 Cities</a>
-                                        <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
-                                            <span>137+ Tour Places</span></a>
-                                    </div>
-                                </div>
-                                <div class="international-plus-icon">
-                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                            <div class="international-item">
-                                <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="international-content">
-                                    <div class="tour-offer bg-info">70% Off</div>
-                                    <div class="international-info">
-                                        <h5 class="text-white text-uppercase mb-2">London</h5>
-                                        <a href="#" class="btn-hover text-white me-4"><i
-                                                class="fas fa-map-marker-alt me-1"></i> 17 Cities</a>
-                                        <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
-                                            <span>26+ Tour Places</span></a>
-                                    </div>
-                                </div>
-                                <div class="international-plus-icon">
-                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Explore Tour Start -->
 
-    <!-- Packages Start -->
-    <div class="container-fluid packages py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                <h5 class="section-title px-3">Packages</h5>
-                <h1 class="mb-0">Awesome Packages</h1>
-            </div>
-            <div class="packages-carousel owl-carousel">
-                <div class="packages-item">
-                    <div class="packages-img">
-                        <img src="img/packages-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                            style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-calendar-alt me-2"></i>3 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
-                        </div>
-                        <div class="packages-price py-2 px-4">$349.00</div>
-                    </div>
-                    <div class="packages-content bg-light">
-                        <div class="p-4 pb-0">
-                            <h5 class="mb-0">Venice - Italy</h5>
-                            <small class="text-uppercase">Hotel Deals</small>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+<!-- Explore Tour Start -->
+<div class="container-fluid ExploreTour py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Explore Tour</h5>
+            <h1 class="mb-4">Discover India</h1>
+            <p class="mb-0">Experience the incredible diversity of India, from Maharashtra's historical forts and pristine beaches to the vibrant cultural landmarks across the nation. Our curated tours offer unforgettable adventures through India's rich heritage, breathtaking landscapes, and spiritual destinations.
+            </p>
+        </div>
+        <div class="tab-class text-center">
+            <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                <li class="nav-item">
+                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                        data-bs-toggle="pill" href="#Maharashtra-Tours">
+                        <span class="text-dark" style="width: 250px;">Maharashtra Tours</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                        href="#All-India-Tours">
+                        <span class="text-dark" style="width: 250px;">All India Tours</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="Maharashtra-Tours" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="maharashtra-item">
+                                <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Maharashtra Tour">
+                                <div class="maharashtra-content">
+                                    <div class="maharashtra-info">
+                                        <h5 class="text-white text-uppercase mb-2">Major Cities Tour</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="maharashtra-plus-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
                             </div>
-                            <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                                quae illum aperiam fugiat voluptatem repellat</p>
                         </div>
-                        <div class="row bg-primary rounded-bottom mx-0">
-                            <div class="col-6 text-start px-0">
-                                <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="maharashtra-item">
+                                <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="All India Tour">
+                                <div class="maharashtra-content">
+                                    <div class="maharashtra-info">
+                                        <h5 class="text-white text-uppercase mb-2">Hill Stations Tour</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="maharashtra-plus-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
                             </div>
-                            <div class="col-6 text-end px-0">
-                                <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="maharashtra-item">
+                                <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Tour Offer">
+                                <div class="maharashtra-content">
+                                    <div class="maharashtra-info">
+                                        <h5 class="text-white text-uppercase mb-2">Religious Sites Tour</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="tour-offer bg-info">15% Off</div>
+                                <div class="maharashtra-plus-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="maharashtra-item">
+                                <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Explore Tour">
+                                <div class="maharashtra-content">
+                                    <div class="maharashtra-info">
+                                        <h5 class="text-white text-uppercase mb-2">Forts & Historical Sites</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="maharashtra-plus-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="maharashtra-item">
+                                <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Tour Discount">
+                                <div class="maharashtra-content">
+                                    <div class="maharashtra-info">
+                                        <h5 class="text-white text-uppercase mb-2">Beaches & Coastal Areas</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="tour-offer bg-warning">50% Off</div>
+                                <div class="maharashtra-plus-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="maharashtra-item">
+                                <img src="img/explore-tour-6.jpg" class="img-fluid w-100 rounded" alt="Tour Package">
+                                <div class="maharashtra-content">
+                                    <div class="maharashtra-info">
+                                        <h5 class="text-white text-uppercase mb-2">Wildlife Sanctuaries</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="maharashtra-plus-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="packages-item">
-                    <div class="packages-img">
-                        <img src="img/packages-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                            style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-calendar-alt me-2"></i>3 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
-                        </div>
-                        <div class="packages-price py-2 px-4">$449.00</div>
-                    </div>
-                    <div class="packages-content bg-light">
-                        <div class="p-4 pb-0">
-                            <h5 class="mb-0">The New California</h5>
-                            <small class="text-uppercase">Hotel Deals</small>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+                <div id="All-India-Tours" class="tab-pane fade show p-0">
+                    <div class="AllIndiaTour-carousel owl-carousel">
+                        <div class="all-india-item">
+                            <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="all-india-content">
+                                <div class="all-india-info">
+                                    <h5 class="text-white text-uppercase mb-2">Rajasthan</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 5 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>100+ Tour Places</span></a>
+                                </div>
                             </div>
-                            <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                                quae illum aperiam fugiat voluptatem repellat</p>
-                        </div>
-                        <div class="row bg-primary rounded-bottom mx-0">
-                            <div class="col-6 text-start px-0">
-                                <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
-                            </div>
-                            <div class="col-6 text-end px-0">
-                                <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            <div class="tour-offer bg-success">30% Off</div>
+                            <div class="all-india-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="packages-item">
-                    <div class="packages-img">
-                        <img src="img/packages-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                            style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-calendar-alt me-2"></i>3 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
-                        </div>
-                        <div class="packages-price py-2 px-4">$549.00</div>
-                    </div>
-                    <div class="packages-content bg-light">
-                        <div class="p-4 pb-0">
-                            <h5 class="mb-0">Discover Japan</h5>
-                            <small class="text-uppercase">Hotel Deals</small>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+                        <div class="all-india-item">
+                            <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="all-india-content">
+                                <div class="all-india-info">
+                                    <h5 class="text-white text-uppercase mb-2">Kerala</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 5 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>50+ Tour Places</span></a>
+                                </div>
                             </div>
-                            <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                                quae illum aperiam fugiat voluptatem repellat</p>
-                        </div>
-                        <div class="row bg-primary rounded-bottom mx-0">
-                            <div class="col-6 text-start px-0">
-                                <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
-                            </div>
-                            <div class="col-6 text-end px-0">
-                                <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            <div class="all-india-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="packages-item">
-                    <div class="packages-img">
-                        <img src="img/packages-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                            style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-map-marker-alt me-2"></i>Thayland</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-calendar-alt me-2"></i>3 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
-                        </div>
-                        <div class="packages-price py-2 px-4">$649.00</div>
-                    </div>
-                    <div class="packages-content bg-light">
-                        <div class="p-4 pb-0">
-                            <h5 class="mb-0">Thayland Trip</h5>
-                            <small class="text-uppercase">Hotel Deals</small>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+                        <div class="all-india-item">
+                            <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="all-india-content">
+                                <div class="tour-offer bg-warning">45% Off</div>
+                                <div class="all-india-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tamil Nadu</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 5 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>80+ Tour Places</span></a>
+                                </div>
                             </div>
-                            <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                                quae illum aperiam fugiat voluptatem repellat</p>
-                        </div>
-                        <div class="row bg-primary rounded-bottom mx-0">
-                            <div class="col-6 text-start px-0">
-                                <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                            <div class="all-india-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
-                            <div class="col-6 text-end px-0">
-                                <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                        <div class="all-india-item">
+                            <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="all-india-content">
+                                <div class="all-india-info">
+                                    <h5 class="text-white text-uppercase mb-2">Himachal Pradesh</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 5 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>60+ Tour Places</span></a>
+                                </div>
+                            </div>
+                            <div class="all-india-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                        <div class="all-india-item">
+                            <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="all-india-content">
+                                <div class="tour-offer bg-info">70% Off</div>
+                                <div class="all-india-info">
+                                    <h5 class="text-white text-uppercase mb-2">Uttarakhand</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 5 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>40+ Tour Places</span></a>
+                                </div>
+                            </div>
+                            <div class="all-india-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1136,7 +1324,311 @@
             </div>
         </div>
     </div>
-    <!-- Packages End -->
+</div>
+<!-- Explore Tour End -->
+
+<!-- Explore packages start -->
+
+<div class="container-fluid packages py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Packages</h5>
+            <h1 class="mb-0">Awesome Packages</h1>
+        </div>
+        <div class="packages-carousel owl-carousel">
+            <div class="packages-item">
+                <div class="packages-img">
+                    <img src="https://via.placeholder.com/300x200?text=Taj+Mahal" class="img-fluid w-100 rounded-top" alt="Taj Mahal">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-map-marker-alt me-2"></i>Agra - India</small>
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-calendar-alt me-2"></i>3 days</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    </div>
+                    <div class="packages-price py-2 px-4">$349.00</div>
+                </div>
+                <div class="packages-content bg-light">
+                    <div class="p-4 pb-0">
+                        <h5 class="mb-0">Taj Mahal Experience</h5>
+                        <small class="text-uppercase">Heritage Tour</small>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mb-4">Explore the iconic Taj Mahal and other historical sites in Agra.</p>
+                    </div>
+                    <div class="row bg-primary rounded-bottom mx-0">
+                        <div class="col-6 text-start px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                        </div>
+                        <div class="col-6 text-end px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packages-item">
+                <div class="packages-img">
+                    <img src="https://via.placeholder.com/300x200?text=Kerala+Backwaters" class="img-fluid w-100 rounded-top" alt="Kerala Backwaters">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-map-marker-alt me-2"></i>Kerala - India</small>
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-calendar-alt me-2"></i>5 days</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    </div>
+                    <div class="packages-price py-2 px-4">$449.00</div>
+                </div>
+                <div class="packages-content bg-light">
+                    <div class="p-4 pb-0">
+                        <h5 class="mb-0">Kerala Backwaters</h5>
+                        <small class="text-uppercase">Nature Retreat</small>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mb-4">Experience the serene backwaters of Kerala with houseboat stays and local cuisine.</p>
+                    </div>
+                    <div class="row bg-primary rounded-bottom mx-0">
+                        <div class="col-6 text-start px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px- 4">Read More</a>
+                        </div>
+                        <div class="col-6 text-end px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packages-item">
+                <div class="packages-img">
+                    <img src="https://via.placeholder.com/300x200?text=Rajasthan+Forts" class="img-fluid w-100 rounded-top" alt="Rajasthan Forts">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-map-marker-alt me-2"></i>Jaipur - India</small>
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-calendar-alt me-2"></i>4 days</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    </div>
+                    <div class="packages-price py-2 px-4">$549.00</div>
+                </div>
+                <div class="packages-content bg-light">
+                    <div class="p-4 pb-0">
+                        <h5 class="mb-0">Royal Rajasthan</h5>
+                        <small class="text-uppercase">Cultural Tour</small>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mb-4">Discover the rich heritage and vibrant culture of Rajasthan.</p>
+                    </div>
+                    <div class="row bg-primary rounded-bottom mx-0">
+                        <div class="col-6 text-start px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                        </div>
+                        <div class="col-6 text-end px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packages-item">
+                <div class="packages-img">
+                    <img src="https://via.placeholder.com/300x200?text=Goa+Beaches" class="img-fluid w-100 rounded-top" alt="Goa Beaches">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-map-marker-alt me-2"></i>Goa - India</small>
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-calendar-alt me-2"></i>5 days</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    </div>
+                    <div class="packages-price py-2 px-4">$649.00</div>
+                </div>
+                <div class="packages-content bg-light">
+                    <div class="p-4 pb-0">
+                        <h5 class="mb-0">Goa Beach Getaway</h5>
+                        <small class="text-uppercase">Beach Holiday</small>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mb-4">Relax on the beautiful beaches of Goa and enjoy vibrant nightlife.</p>
+                    </div>
+                    <div class="row bg-primary rounded-bottom mx-0">
+                        <div class="col-6 text-start px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                        </div>
+                        <div class="col-6 text-end px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packages-item">
+                <div class="packages-img">
+                    <img src="https://via.placeholder.com/300x200?text=Varanasi+Ghats" class="img-fluid w-100 rounded-top" alt="Varanasi Ghats">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-map-marker-alt me-2"></i>Varanasi - India</small>
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-calendar-alt me-2"></i>3 days</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    </div>
+                    <div class="packages-price py-2 px-4">$399.00</div>
+                </div>
+                <div class="packages-content bg-light">
+                    <div class="p-4 pb-0">
+                        <h5 class="mb-0">Spiritual Varanasi</h5>
+                        <small class="text-uppercase">Cultural Experience</small>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mb-4">Experience the spiritual essence of Varanasi with Ganga Aarti and temple visits.</p>
+                    </div>
+                    <div class="row bg-primary rounded-bottom mx-0">
+                        <div class="col-6 text-start px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                        </div>
+                        <div class="col-6 text-end px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packages-item">
+                <div class="packages-img">
+                    <img src="https://via.placeholder.com/300x200?text=Rishikesh+Adventure" class="img-fluid w-100 rounded-top" alt="Rishikesh Adventure">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-map-marker-alt me-2"></i>Rishikesh - India</small>
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-calendar-alt me-2"></i>4 days</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    </div>
+                    <div class="packages-price py-2 px-4">$499.00</div>
+                </div>
+                <div class="packages-content bg-light">
+                    <div class="p-4 pb-0">
+                        <h5 class="mb-0">Adventure in Rishikesh</h5>
+                        <small class="text-uppercase">Adventure Tour</small>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mb-4">Engage in thrilling activities like river rafting and trekking in the foothills of the Himalayas.</p>
+                    </div>
+                    <div class="row bg-primary rounded-bottom mx-0">
+                        <div class="col-6 text-start px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                        </div>
+                        <div class="col-6 text-end px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="packages-item">
+                <div class="packages-img">
+                    <img src="https://via.placeholder.com/300x200?text=Darjeeling+Hills" class="img-fluid w-100 rounded-top" alt="Darjeeling Hills">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-map-marker-alt me-2"></i>Darjeeling - India</small>
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-calendar-alt me-2"></i>6 days</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    </div>
+                    <div class="packages-price py-2 px-4">$599.00</div>
+                </div>
+                <div class="packages-content bg-light">
+                    <div class="p-4 pb-0">
+                        <h5 class="mb-0">Darjeeling Delights</h5>
+                        <small class="text-uppercase">Hill Station Tour</small>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mb-4">Enjoy breathtaking views of the Himalayas and explore tea gardens.</p>
+                    </div>
+                    <div class="row bg-primary rounded-bottom mx-0">
+                        <div class="col-6 text-start px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                        </div>
+                        <div class="col-6 text-end px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packages-item">
+                <div class="packages-img">
+                    <img src="https://via.placeholder.com/300x200?text=Andaman+Islands" class="img-fluid w-100 rounded-top" alt="Andaman Islands">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-map-marker-alt me-2"></i>Andaman Islands - India</small>
+                        <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-calendar-alt me-2"></i>7 days</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    </div>
+                    <div class="packages-price py-2 px-4">$799.00</div>
+                </div>
+                <div class="packages-content bg-light">
+                    <div class="p-4 pb-0">
+                        <h5 class="mb-0">Andaman Adventure</h5>
+                        <small class="text-uppercase">Island Getaway</small>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mb-4">Explore pristine beaches, coral reefs, and lush forests in the Andaman Islands.</p>
+                    </div>
+                    <div class="row bg-primary rounded-bottom mx-0">
+                        <div class="col-6 text-start px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
+                        </div>
+                        <div class="col-6 text-end px-0">
+                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Explore packages end -->
 
     <!-- Gallery Start -->
     <div class="container-fluid gallery py-5 my-5">
@@ -1561,10 +2053,10 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <select class="form-select bg-white border-0" id="CategoriesSelect">
                                         <option value="1">Kids</option>
                                         <option value="2">1</option>
                                         <option value="3">2</option>
+                                        <option value="4">3</option>
                                         <option value="3">3</option>
                                     </select>
                                     <label for="CategoriesSelect">Categories</label>
@@ -1708,9 +2200,9 @@
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Our Blog</h5>
                 <h1 class="mb-4">Popular Travel Blogs</h1>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti deserunt tenetur
-                    sapiente atque. Magni non explicabo beatae sit, vel reiciendis consectetur numquam id similique sunt
-                    error obcaecati ducimus officia maiores.
+                <p class="mb-0">Explore the vibrant tapestry of India and discover hidden gems, spiritual retreats, and
+                    adventurous escapades. Join us on a journey through captivating landscapes, rich cultural heritage, and
+                    unforgettable experiences.
                 </p>
             </div>
             <div class="row g-4 justify-content-center">
@@ -1718,7 +2210,9 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-1.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top"
+                                    src="https://via.placeholder.com/300x200?text=Himalayan+Trekking"
+                                    alt="Himalayan Trekking Adventure">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
@@ -1734,9 +2228,9 @@
                         </div>
                         <div class="blog-content border border-top-0 rounded-bottom p-4">
                             <p class="mb-3">Posted By: Royal Hamblin </p>
-                            <a href="#" class="h4">Adventures Trip</a>
-                            <p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
-                                eos</p>
+                            <a href="#" class="h4">Himalayan Trekking Adventure</a>
+                            <p class="my-3">Embark on a soul-stirring journey through the majestic Himalayas, conquering
+                                challenging trails and witnessing breathtaking vistas.</p>
                             <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
                         </div>
                     </div>
@@ -1745,7 +2239,9 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-2.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top"
+                                    src="https://via.placeholder.com/300x200?text=Kerala+Backwaters"
+                                    alt="Kerala Backwaters Cruise">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
@@ -1761,9 +2257,9 @@
                         </div>
                         <div class="blog-content border border-top-0 rounded-bottom p-4">
                             <p class="mb-3">Posted By: Royal Hamblin </p>
-                            <a href="#" class="h4">Adventures Trip</a>
-                            <p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
-                                eos</p>
+                            <a href="#" class="h4">Kerala Backwaters Cruise</a>
+                            <p class="my-3">Glide along the serene backwaters of Kerala on a traditional houseboat, surrounded
+                                by lush greenery and tranquil village life.</p>
                             <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
                         </div>
                     </div>
@@ -1772,7 +2268,9 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-3.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top"
+                                    src="https://via.placeholder.com/300x200?text=Rajasthan+Forts"
+                                    alt="Rajasthan Forts and Palaces">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
@@ -1788,9 +2286,95 @@
                         </div>
                         <div class="blog-content border border-top-0 rounded-bottom p-4">
                             <p class="mb-3">Posted By: Royal Hamblin </p>
-                            <a href="#" class="h4">Adventures Trip</a>
-                            <p class="my-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
-                                eos</p>
+                            <a href="#" class="h4">Rajasthan Forts and Palaces</a>
+                            <p class="my-3">Journey through the majestic forts and opulent palaces of Rajasthan, where tales
+                                of valor and royalty echo through the ages.</p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <div class="blog-img-inner">
+                                <img class="img-fluid w-100 rounded-top"
+                                    src="https://via.placeholder.com/300x200?text=Goa+Beaches" alt="Goa Beach Paradise">
+                                <div class="blog-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                            <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt text-primary me-2"></i>15 Feb 2050</small>
+                                <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i
+                                        class="fa fa-thumbs-up text-primary me-2"></i>2.2K</a>
+                                <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i
+                                        class="fa fa-comments text-primary me-2"></i>1.5K</a>
+                            </div>
+                        </div>
+                        <div class="blog-content border border-top-0 rounded-bottom p-4">
+                            <p class="mb-3">Posted By: Jane Smith</p>
+                            <a href="#" class="h4">Goa Beach Paradise</a>
+                            <p class="my-3">Escape to the sun-kissed shores of Goa, where golden beaches, vibrant nightlife,
+                                and a laid-back vibe create the perfect holiday escape.</p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <div class="blog-img-inner">
+                                <img class="img-fluid w-100 rounded-top"
+                                    src="https://via.placeholder.com/300x200?text=Varanasi+Ghats"
+                                    alt="Spiritual Varanasi之旅">
+                                <div class="blog-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                            <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt text-primary me-2"></i>10 Mar 2050</small>
+                                <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i
+                                        class="fa fa-thumbs-up text-primary me-2"></i>1.9K</a>
+                                <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i
+                                        class="fa fa-comments text-primary me-2"></i>1.2K</a>
+                            </div>
+                        </div>
+                        <div class="blog-content border border-top-0 rounded-bottom p-4">
+                            <p class="mb-3">Posted By: David Lee</p>
+                            <a href="#" class="h4">Spiritual Varanasi之旅</a>
+                            <p class="my-3">Experience the divine essence of Varanasi, where sacred ghats, ancient temples,
+                                and the holy Ganges converge to create a truly transformative experience.</p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <div class="blog-img-inner">
+                                <img class="img-fluid w-100 rounded-top"
+                                    src="https://via.placeholder.com/300x200?text=Indian+Wildlife"
+                                    alt="Indian Wildlife Safari">
+                                <div class="blog-icon">
+                                    <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                            <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt text-primary me-2"></i>05 Apr 2050</small>
+                                <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i
+                                        class="fa fa-thumbs-up text-primary me-2"></i>2.5K</a>
+                                <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i
+                                        class="fa fa-comments text-primary me-2"></i>1.8K</a>
+                            </div>
+                        </div>
+                        <div class="blog-content border border-top-0 rounded-bottom p-4">
+                            <p class="mb-3">Posted By: Sarah Williams</p>
+                            <a href="#" class="h4">The Thrill of an Indian Wildlife Safari</a>
+                            <p class="my-3">Embark on a thrilling safari through India's diverse national parks, encountering
+                                majestic creatures in their natural habitat.</p>
                             <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
                         </div>
                     </div>
@@ -1798,6 +2382,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Blog End -->
 
     <!-- Testimonial Start -->
@@ -1810,17 +2395,18 @@
             <div class="testimonial-carousel owl-carousel">
                 <div class="testimonial-item text-center rounded pb-4">
                     <div class="testimonial-comment bg-light rounded p-4">
-                        <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                            nostrum cupiditate, eligendi repellendus saepe illum earum architecto dicta quisquam quasi
-                            porro officiis. Vero reiciendis,
+                        <p class="text-center mb-5">"Exploring India with this company was an incredible experience. The
+                            arrangements were seamless, and the hospitality was heartwarming. I especially loved visiting the
+                            ancient temples and experiencing the vibrant culture."
                         </p>
                     </div>
                     <div class="testimonial-img p-1">
-                        <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle" alt="Image">
+                        <img src="https://via.placeholder.com/100x100?text=Rani+Sharma" class="img-fluid rounded-circle"
+                            alt="Rani Sharma">
                     </div>
                     <div style="margin-top: -35px;">
-                        <h5 class="mb-0">John Abraham</h5>
-                        <p class="mb-0">New York, USA</p>
+                        <h5 class="mb-0">Rani Sharma</h5>
+                        <p class="mb-0">Mumbai, India</p>
                         <div class="d-flex justify-content-center">
                             <i class="fas fa-star text-primary"></i>
                             <i class="fas fa-star text-primary"></i>
@@ -1832,17 +2418,18 @@
                 </div>
                 <div class="testimonial-item text-center rounded pb-4">
                     <div class="testimonial-comment bg-light rounded p-4">
-                        <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                            nostrum cupiditate, eligendi repellendus saepe illum earum architecto dicta quisquam quasi
-                            porro officiis. Vero reiciendis,
+                        <p class="text-center mb-5">"The Kerala backwaters tour was a highlight of my trip. The houseboat was
+                            comfortable, the food was delicious, and the scenery was breathtaking. I highly recommend this
+                            company for their excellent service."
                         </p>
                     </div>
                     <div class="testimonial-img p-1">
-                        <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle" alt="Image">
+                        <img src="https://via.placeholder.com/100x100?text=Suresh+Menon" class="img-fluid rounded-circle"
+                            alt="Suresh Menon">
                     </div>
                     <div style="margin-top: -35px;">
-                        <h5 class="mb-0">John Abraham</h5>
-                        <p class="mb-0">New York, USA</p>
+                        <h5 class="mb-0">Suresh Menon</h5>
+                        <p class="mb-0">Kochi, India</p>
                         <div class="d-flex justify-content-center">
                             <i class="fas fa-star text-primary"></i>
                             <i class="fas fa-star text-primary"></i>
@@ -1854,17 +2441,18 @@
                 </div>
                 <div class="testimonial-item text-center rounded pb-4">
                     <div class="testimonial-comment bg-light rounded p-4">
-                        <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                            nostrum cupiditate, eligendi repellendus saepe illum earum architecto dicta quisquam quasi
-                            porro officiis. Vero reiciendis,
+                        <p class="text-center mb-5">"I had an amazing time on the Rajasthan tour. The forts and palaces were
+                            magnificent, and the cultural experiences were unforgettable. The guide was knowledgeable and
+                            friendly."
                         </p>
                     </div>
                     <div class="testimonial-img p-1">
-                        <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle" alt="Image">
+                        <img src="https://via.placeholder.com/100x100?text=Priya+Patel" class="img-fluid rounded-circle"
+                            alt="Priya Patel">
                     </div>
                     <div style="margin-top: -35px;">
-                        <h5 class="mb-0">John Abraham</h5>
-                        <p class="mb-0">New York, USA</p>
+                        <h5 class="mb-0">Priya Patel</h5>
+                        <p class="mb-0">Jaipur, India</p>
                         <div class="d-flex justify-content-center">
                             <i class="fas fa-star text-primary"></i>
                             <i class="fas fa-star text-primary"></i>
@@ -1876,17 +2464,64 @@
                 </div>
                 <div class="testimonial-item text-center rounded pb-4">
                     <div class="testimonial-comment bg-light rounded p-4">
-                        <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                            nostrum cupiditate, eligendi repellendus saepe illum earum architecto dicta quisquam quasi
-                            porro officiis. Vero reiciendis,
+                        <p class="text-center mb-5">"The company provided exceptional service. They were very responsive to all
+                            our queries and ensured that our trip was comfortable and enjoyable. I would definitely use them
+                            again."
                         </p>
                     </div>
                     <div class="testimonial-img p-1">
-                        <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle" alt="Image">
+                        <img src="https://via.placeholder.com/100x100?text=Amit+Shah" class="img-fluid rounded-circle"
+                            alt="Amit Shah">
                     </div>
                     <div style="margin-top: -35px;">
-                        <h5 class="mb-0">John Abraham</h5>
-                        <p class="mb-0">New York, USA</p>
+                        <h5 class="mb-0">Amit Shah</h5>
+                        <p class="mb-0">Delhi, India</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center rounded pb-4">
+                    <div class="testimonial-comment bg-light rounded p-4">
+                        <p class="text-center mb-5">"I had a wonderful family trip to Goa, all thanks to this travel company. The
+                            beaches were beautiful, and the accommodations were perfect for a family. We created memories that
+                            will last a lifetime."
+                        </p>
+                    </div>
+                    <div class="testimonial-img p-1">
+                        <img src="https://via.placeholder.com/100x100?text=Meera+Verma" class="img-fluid rounded-circle"
+                            alt="Meera Verma">
+                    </div>
+                    <div style="margin-top: -35px;">
+                        <h5 class="mb-0">Meera Verma</h5>
+                        <p class="mb-0">Bangalore, India</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center rounded pb-4">
+                    <div class="testimonial-comment bg-light rounded p-4">
+                        <p class="text-center mb-5">"The tour of Varanasi was a truly spiritual experience. The company took care of
+                            all the details, allowing me to immerse myself in the rich culture and traditions. I highly
+                            recommend this tour to anyone seeking a deeper connection with India."
+                        </p>
+                    </div>
+                    <div class="testimonial-img p-1">
+                        <img src="https://via.placeholder.com/100x100?text=Rohan+Gupta" class="img-fluid rounded-circle"
+                            alt="Rohan Gupta">
+                    </div>
+                    <div style="margin-top: -35px;">
+                        <h5 class="mb-0">Rohan Gupta</h5>
+                        <p class="mb-0">Kolkata, India</p>
                         <div class="d-flex justify-content-center">
                             <i class="fas fa-star text-primary"></i>
                             <i class="fas fa-star text-primary"></i>
@@ -1899,6 +2534,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Testimonial End -->
 
     <!-- Subscribe Start -->
@@ -2023,9 +2659,7 @@
                     reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-start">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    <!-- Credit information moved to a separate file for cleaner HTML. -->
                     Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
                         href="https://themewagon.com">ThemeWagon</a>
                 </div>
@@ -2043,14 +2677,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
+    <!-- Removed jQuery as it is not required for Bootstrap 5 -->
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+
+
+```markdown
+# Indicab Tourism Website Template – Full Automated Project Generation
+
+**Objective:**  
+Automatically develop a complete, ready-to-run tourism website template called **Indicab**. The generated project should implement all features and requirements as described below, with all files, code, and instructions fully included. No human intervention is needed beyond running the generated project.
+
+---
+
+## Project Overview
+
+**Indicab** is a tourism website template designed to showcase destinations, packages, and services for travel agencies. It must include:
+
+- **Fully Responsive Design:** The website must adapt seamlessly to mobile, tablet, and desktop devices.
+- **Interactive Image Galleries:** Utilize Owl Carousel to display interactive image galleries.
+- **Booking and Registration Forms:** Include forms for user booking and registration with proper validation.
+- **SEO-Friendly Structure:** Use semantic HTML5 elements and meta tags (charset, viewport, description) for improved SEO.
+- **Modern Layout and Integration:** Leverage popular libraries like Bootstrap for layout and styling, and Owl Carousel for the gallery.
+
+---
+
+## Project Structure & Files to Generate
+
+The project must consist of the following files and folder structure:
+
+1. **`index.html`**  
+   - Contains the main HTML structure with a header, navigation, hero section, gallery section, and booking/registration forms.
+   - Includes appropriate SEO meta tags and links to CSS/JS resources.
+   - Integrates Bootstrap and Owl Carousel via CDN.
+   - Uses semantic tags (`<header>`, `<section>`, `<footer>`, etc.).
+
+2. **`css/style.css`**  
+   - Contains custom styling for the website.
+   - Includes media queries for responsiveness and any necessary overrides to Bootstrap styles.
+   - Is the CSS output compiled from the SASS source.
+
+3. **`scss/main.scss`** (inside an `scss/` folder)  
+   - Contains modular SASS code with variables, nesting, and mixins.
+   - Must be intended to compile into `css/style.css`.
+
+4. **`js/main.js`**  
+   - Contains custom JavaScript to initialize Owl Carousel and add interactivity.
+   - Implements form validation for the booking and registration forms.
+   - May provide additional interactive features (such as a mobile menu toggle or smooth scrolling).
+
+5. **`README.md`**  
+   - Provides a project summary and detailed setup instructions:
+     - How to clone/download the repository.
+     - How to open the project folder in an editor.
+     - How to launch `index.html` in a browser.
+   - Documents usage guidelines and contribution instructions.
+   - Includes a folder structure diagram that maps out all files and directories.
+   - Documents the image compression commands (see below).
+
+6. **`LICENSE.txt`**  
+   - Contains a placeholder or your chosen license text.
+
+7. **Image Compression Documentation:**  
+   - Within the `README.md` (or as a separate documentation section), include the following image compression commands for Windows CMD to compress images:
+
+   ```
+   for %i in (d:\GITHUB_REPOSITORIES\projects\IndiCab\img\*.jpg d:\GITHUB_REPOSITORIES\projects\IndiCab\img\*.png) do magick mogrify -path d:\GITHUB_REPOSITORIES\projects\IndiCab\img\compressed -quality 85 %i
+
+   magick mogrify -path d:\GITHUB_REPOSITORIES\projects\IndiCab\img\compressed -quality 85 d:\GITHUB_REPOSITORIES\projects\IndiCab\img\*.jpg d:\GITHUB_REPOSITORIES\projects\IndiCab\img\*.png
+   ```
+
+---
+
+## Detailed Requirements for Each File
+
+### index.html  
+- Build the HTML structure with the following sections:
+  - **Header:** Navigation bar (with links to Home, Gallery, Booking, and Contact).
+  - **Hero Section:** A visually striking section showcasing the tourism theme.
+  - **Gallery Section:** An interactive image gallery using Owl Carousel.
+  - **Booking/Registration Section:** Forms with input fields and validations.
+  - **Footer:** Contact details, social media links, and additional site information.
+- Tightly integrate Bootstrap for layout and Owl Carousel for the gallery—include proper CDN links in the header.
+
+### css/style.css  
+- Write custom styles to complement Bootstrap.
+- Create responsive layouts with media queries.
+- Ensure consistent styling for forms, the gallery, the header, and footer.
+
+### scss/main.scss  
+- Use modular, nested SASS to generate the CSS:
+  - Define variables for colors, fonts, and spacing.
+  - Create mixins for reusable style snippets.
+  - Nest related styles under relevant parent selectors.
+- Comment sections clearly for future maintenance.
+
+### js/main.js  
+- Initialize Owl Carousel with proper settings for autoplay, navigation, and responsiveness.
+- Add form validation (using vanilla JavaScript) for both booking and registration forms.
+- Implement any additional interactivity (e.g., smooth scrolling or mobile menu interactions).
+
+### README.md  
+- Provide a detailed project overview, setup, and usage instructions.
+- Include a folder structure diagram outlining where each file is located.
+- Document the image compression command clearly.
+- List contribution guidelines: encourage submitting issues or pull requests, and instruct that major changes be discussed first via an issue.
+
+### LICENSE.txt  
+- Insert a placeholder license text or your chosen license content.
+
+---
+
+## Final Instructions
+
+Your output MUST include the complete content for each file described above. Clearly demarcate each file section with a heading that specifies the file name (for example, by using `--- filename: index.html ---` markers). The complete project should be ready to copy into a new repository and run without additional manual coding or setup changes.
+
+**Note:**  
+This prompt is intended to allow GitHub Copilot to generate every file and all necessary code for the Indicab project without human intervention. Ensure that all library integrations (Bootstrap, Owl Carousel) and functionalities (responsive design, form validation, interactivity) are correctly implemented and that the code is well-commented and structured for maintainability.
+
+---
+
+Begin now and output the complete, self-contained Indicab project with all required files.
+```
